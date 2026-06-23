@@ -1,0 +1,31 @@
+station1,line1,station2,line2,time,dist
+Kashmere Gate,Red,Kashmere Gate,Yellow,10,0.15
+Kashmere Gate,Red,Kashmere Gate,Violet,12,0.20
+Kashmere Gate,Yellow,Kashmere Gate,Violet,8,0.15
+Rajiv Chowk,Yellow,Rajiv Chowk,Blue,7,0.15
+New Delhi,Yellow,New Delhi-Airport Express,Airport Express,12,0.50
+Central Secretariat,Yellow,Central Secretariat,Violet,7,0.15
+Hauz Khas,Yellow,Hauz Khas,Magenta,10,0.35
+Dilli Haat INA,Yellow,Dilli Haat INA,Pink,6,0.25
+Azadpur,Yellow,Azadpur,Pink,6,0.25
+Sikandarpur,Yellow,Sikandarpur,Rapid Metro,6,0.25
+Janak Puri West,Blue,Janak Puri West,Magenta,8,0.15
+Rajouri Garden,Blue,Rajouri Garden,Pink,6,0.25
+Kirti Nagar,Blue,Kirti Nagar,Green_Branch,5,0.15
+Mandi House,Blue,Mandi House,Violet,6,0.15
+Yamuna Bank,Blue,Yamuna Bank,Blue_Vaishali,3,0.05
+Mayur Vihar Phase-1,Blue,Mayur Vihar Phase-1,Pink,6,0.25
+Anand Vihar,Blue_Vaishali,Anand Vihar,Pink,6,0.25
+Karkar Duma,Blue_Vaishali,Karkar Duma,Pink,6,0.25
+Botanical Garden,Blue,Botanical Garden,Magenta,8,0.25
+Dwarka,Blue,Dwarka,Grey,5,0.15
+Dwarka Sector 21,Blue,Dwarka Sector 21,Airport Express,8,0.20
+Inderlok,Red,Inderlok,Green,5,0.15
+Netaji Subash Place,Red,Netaji Subash Place,Pink,6,0.25
+Welcome,Red,Welcome,Pink,5,0.15
+Lajpat Nagar,Violet,Lajpat Nagar,Pink,6,0.25
+Kalkaji Mandir,Violet,Kalkaji Mandir,Magenta,8,0.25
+Ashok Park Main,Green,Ashok Park Main,Green_Branch,3,0.05
+Punjabi Bagh,Green,Punjabi Bagh West,Pink,8,0.25
+Dhaula Kuan,Airport Express,Durgabai Deshmukh South Campus,Pink,15,0.80
+Noida Sector 52,Blue,Noida Sector 51,Aqua,10,0.60
