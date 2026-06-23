@@ -2,14 +2,16 @@
 using namespace std;
 
 class Trie{
-private: 
+private:
+
     struct Node{
         Node* links[256];
-        bool end;
+        bool isEnd;
 
         Node(){
-            end = false;
-            for(int i= 0;i<256;i++){
+            isEnd = false;
+
+            for(int i=0;i<256;i++){
                 links[i] = nullptr;
             }
         }
@@ -18,35 +20,31 @@ private:
     Node* root;
 
     void dfs(Node* node,
-             string cur,
+             string current,
              vector<string>& ans){
 
-        if(node->end){
-            ans.push_back(cur);
+        if(node->isEnd){
+            ans.push_back(current);
         }
 
         for(int i=0;i<256;i++){
 
-            if(node->links[i]){
+            if(node->links[i] != nullptr){
 
                 dfs(node->links[i],
-                    cur + char(i),
+                    current + char(i),
                     ans);
             }
         }
     }
+
 public:
 
     Trie(){
         root = new Node();
-
     }
 
     void insert(string word){
-
-        for(char &ch : word){
-            ch = tolower(ch);
-        }
 
         Node* node = root;
 
@@ -61,13 +59,10 @@ public:
             node = node->links[idx];
         }
 
-        node->end = true;
+        node->isEnd = true;
     }
-    bool search(string word){
 
-        for(char &ch : word){
-            ch = tolower(ch);
-        }
+    bool search(string word){
 
         Node* node = root;
 
@@ -82,20 +77,14 @@ public:
             node = node->links[idx];
         }
 
-        return node->end;
+        return node->isEnd;
     }
 
-    vector<string> searchPrefix(string prefix){
-
-        string temp = prefix;
-
-        for(char &ch : temp){
-            ch = tolower(ch);
-        }
+    vector<string> getSuggestions(string prefix){
 
         Node* node = root;
 
-        for(char ch : temp){
+        for(char ch : prefix){
 
             unsigned char idx = ch;
 
@@ -108,7 +97,7 @@ public:
 
         vector<string> ans;
 
-        dfs(node, temp, ans);
+        dfs(node,prefix,ans);
 
         return ans;
     }
@@ -133,6 +122,18 @@ private:
     unordered_map<string , int> nodeID;
 public:
     unordered_map<string , vector<int>> stationnodes;
+
+
+    vector<string> getAllStations(){
+
+    vector<string> stations;
+
+    for(auto &p : stationnodes){
+        stations.push_back(p.first);
+    }
+
+    return stations;
+    }
 
     void addNode(string station , string line){
         string key = station + "#" + line;
@@ -399,10 +400,57 @@ public:
 
 };
 
+string chooseStation(Trie& trie){
+
+    while(true){
+        int n;
+        string prefix;
+
+        cout<<"Enter station prefix: ";
+        getline(cin,prefix);
+
+        vector<string> suggestions =
+            trie.getSuggestions(prefix);
+
+        if(suggestions.empty()){
+            cout<<"No stations found\n";
+            continue;
+        }
+
+        cout<<endl;
+        n = suggestions.size();
+        for(int i=0;i<n;i++){
+            cout<<i<<" -> "
+                <<suggestions[i]
+                <<endl;
+        }
+
+        cout<<"-1 -> Search Again\n";
+
+        int choice;
+
+        cout<<"Choose: ";
+        cin>>choice;
+        cin.ignore();
+
+        if(choice == -1){
+            continue;
+        }
+
+        if(choice >= 0 &&
+           choice < n){
+
+            return suggestions[choice];
+        }
+
+        cout<<"Invalid Choice\n\n";
+    }
+}
 
 int main(){
 
     MetroGraph g;
+
     g.loadCSV("blue_main.csv");
     g.loadCSV("Blue_Vaishali.csv");
     g.loadCSV("Yellow.csv");
@@ -416,9 +464,32 @@ int main(){
     g.loadCSV("airport.csv");
     g.loadCSV("aqua.csv");
     g.loadCSV("grey.csv");
+
     g.loadInterchanges("linechange.csv");
-    g.getPath("Dwarka Sector 21", "Huda City Centre");
-   
 
+    Trie trie;
+
+    vector<string> stations = g.getAllStations();
+
+    for(string station : stations){
+        trie.insert(station);
+    }
+
+    cout<<"Select Source Station\n";
+    string source = chooseStation(trie);
+
+    cout<<"\nSelect Destination Station\n";
+    string destination = chooseStation(trie);
+
+    cout<<"\nSource      : "
+        << source << endl;
+
+    cout<<"Destination : "
+        << destination << endl;
+
+    cout<<endl;
+
+    g.getPath(source,destination);
+
+    return 0;
 }
-
