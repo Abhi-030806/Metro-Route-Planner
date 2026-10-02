@@ -72,7 +72,11 @@ class Trie {
 }
 
 // ----------------- DIJKSTRA ROUTING ENGINE -----------------
-function runDijkstra(station1, station2) {
+// Supports 3 types of paths based on weights: wt = a*time + b*dist + c*transfer
+// 1. 'fastest'      : a = 1.0, b = 0.0, c = 10.0 (Fastest Route)
+// 2. 'interchange'  : a = 0.0, b = 0.0, c = 1.0  (Fewest Interchanges)
+// 3. 'distance'     : a = 0.0, b = 1.0, c = 0.5  (Shortest Distance)
+function runDijkstra(station1, station2, pathType = 'fastest') {
   const { nodes, adjacency, stationToNodes } = metroData;
 
   const srcNodeIds = stationToNodes[station1];
@@ -80,12 +84,19 @@ function runDijkstra(station1, station2) {
 
   if (!srcNodeIds || !destNodeIds) return null;
 
+  // Set weights according to selected path type
+  let a = 1.0, b = 0.0, c = 10.0;
+  if (pathType === 'interchange') {
+    a = 0.0; b = 0.0; c = 1.0;
+  } else if (pathType === 'distance') {
+    a = 0.0; b = 1.0; c = 0.5;
+  }
+
   let bestCost = Infinity;
   let bestPath = null;
 
   for (const src of srcNodeIds) {
     for (const dest of destNodeIds) {
-      // Dijkstra from src to dest
       const n = nodes.length;
       const dist = new Array(n).fill(Infinity);
       const parent = new Array(n).fill(-1);
@@ -110,8 +121,7 @@ function runDijkstra(station1, station2) {
         const edges = adjacency[u] || [];
         for (const e of edges) {
           const v = e.to;
-          // Matching C++ cost weight: 0*time + 0*dist + 1*transfer
-          const wt = e.isTransfer ? 1 : 0;
+          const wt = a * e.time + b * e.dist + c * (e.isTransfer ? 1.0 : 0.0);
           if (dist[u] + wt < dist[v]) {
             dist[v] = dist[u] + wt;
             parent[v] = u;
@@ -137,10 +147,25 @@ function runDijkstra(station1, station2) {
   const routeNodes = bestPath.map(id => nodes[id]);
   const steps = [];
   let interchange = 0;
+  let totalTime = 0;
+  let totalDist = 0;
 
   for (let i = 0; i < routeNodes.length; i++) {
     const curr = routeNodes[i];
-    const isChange = (i + 1 < routeNodes.length && curr.station === routeNodes[i + 1].station);
+    const isChange = (i + 1 < routeNodes.length && curr.line !== routeNodes[i + 1].line);
+
+    if (i + 1 < routeNodes.length) {
+      const u = bestPath[i];
+      const v = bestPath[i + 1];
+      const edges = adjacency[u] || [];
+      for (const e of edges) {
+        if (e.to === v) {
+          totalTime += e.time;
+          totalDist += e.dist;
+          break;
+        }
+      }
+    }
 
     if (isChange) {
       interchange++;
@@ -150,8 +175,9 @@ function runDijkstra(station1, station2) {
         nextLine: routeNodes[i + 1].line,
         isChange: true
       });
-      // Skip duplicate station row
-      i++;
+      if (curr.station === routeNodes[i + 1].station) {
+        i++; // skip duplicate station row
+      }
     } else {
       steps.push({
         station: curr.station,
@@ -161,12 +187,20 @@ function runDijkstra(station1, station2) {
     }
   }
 
+  let typeName = 'Fastest Route';
+  if (pathType === 'interchange') typeName = 'Fewest Interchanges';
+  if (pathType === 'distance') typeName = 'Shortest Distance';
+
   return {
     source: station1,
     destination: station2,
+    pathType,
+    typeName,
     startLine: routeNodes[0].line,
     steps,
     interchange,
+    totalTime,
+    totalDist: Number(totalDist.toFixed(2)),
     totalStations: steps.length
   };
 }
@@ -175,6 +209,7 @@ function runDijkstra(station1, station2) {
 export default function App() {
   const [source, setSource] = useState('Kashmere Gate');
   const [destination, setDestination] = useState('Botanical Garden');
+  const [pathType, setPathType] = useState('fastest'); // 'fastest' | 'interchange' | 'distance'
   const [sourceSuggestions, setSourceSuggestions] = useState([]);
   const [destSuggestions, setDestSuggestions] = useState([]);
   const [route, setRoute] = useState(null);
@@ -199,20 +234,31 @@ export default function App() {
     setDestSuggestions(trie.getSuggestions(val));
   };
 
-  const handleFindRoute = (e) => {
-    if (e) e.preventDefault();
-    if (!source.trim() || !destination.trim()) return;
+  const calculateRoute = (src = source, dest = destination, type = pathType) => {
+    if (!src.trim() || !dest.trim()) return;
 
-    if (source.trim() === destination.trim()) {
+    if (src.trim() === dest.trim()) {
       alert('Source and destination are the same station!');
       return;
     }
 
-    const res = runDijkstra(source.trim(), destination.trim());
+    const res = runDijkstra(src.trim(), dest.trim(), type);
     setRoute(res);
     setHasSearched(true);
     setSourceSuggestions([]);
     setDestSuggestions([]);
+  };
+
+  const handleFindRoute = (e) => {
+    if (e) e.preventDefault();
+    calculateRoute(source, destination, pathType);
+  };
+
+  const handleTypeSelect = (selectedType) => {
+    setPathType(selectedType);
+    if (hasSearched) {
+      calculateRoute(source, destination, selectedType);
+    }
   };
 
   const handleSwap = () => {
@@ -221,6 +267,9 @@ export default function App() {
     setDestination(temp);
     setSourceSuggestions([]);
     setDestSuggestions([]);
+    if (hasSearched) {
+      calculateRoute(destination, temp, pathType);
+    }
   };
 
   return (
@@ -295,6 +344,34 @@ export default function App() {
             )}
           </div>
 
+          {/* Path Type Selector */}
+          <div className="route-types-container">
+            <label className="type-label">Choose Path Type:</label>
+            <div className="type-buttons">
+              <button
+                type="button"
+                className={`type-btn ${pathType === 'fastest' ? 'active' : ''}`}
+                onClick={() => handleTypeSelect('fastest')}
+              >
+                ⚡ Fastest Route
+              </button>
+              <button
+                type="button"
+                className={`type-btn ${pathType === 'interchange' ? 'active' : ''}`}
+                onClick={() => handleTypeSelect('interchange')}
+              >
+                🔄 Fewest Interchanges
+              </button>
+              <button
+                type="button"
+                className={`type-btn ${pathType === 'distance' ? 'active' : ''}`}
+                onClick={() => handleTypeSelect('distance')}
+              >
+                📏 Shortest Distance
+              </button>
+            </div>
+          </div>
+
           {/* Action Buttons */}
           <div className="button-group">
             <button type="submit" className="find-btn">
@@ -306,13 +383,13 @@ export default function App() {
         {/* Quick Station Picks */}
         <div className="quick-picks">
           <span>Popular:</span>
-          <button type="button" onClick={() => { setSource('Rajiv Chowk'); setDestination('Hauz Khas'); }}>
+          <button type="button" onClick={() => { setSource('Rajiv Chowk'); setDestination('Hauz Khas'); calculateRoute('Rajiv Chowk', 'Hauz Khas'); }}>
             Rajiv Chowk ➔ Hauz Khas
           </button>
-          <button type="button" onClick={() => { setSource('Kashmere Gate'); setDestination('Botanical Garden'); }}>
+          <button type="button" onClick={() => { setSource('Kashmere Gate'); setDestination('Botanical Garden'); calculateRoute('Kashmere Gate', 'Botanical Garden'); }}>
             Kashmere Gate ➔ Botanical Garden
           </button>
-          <button type="button" onClick={() => { setSource('New Delhi'); setDestination('Dwarka Sector 21'); }}>
+          <button type="button" onClick={() => { setSource('New Delhi'); setDestination('Dwarka Sector 21'); calculateRoute('New Delhi', 'Dwarka Sector 21'); }}>
             New Delhi ➔ Dwarka Sec 21
           </button>
         </div>
@@ -324,7 +401,10 @@ export default function App() {
           <div className="result-header">
             <h2>Journey Summary</h2>
             <div className="badge-row">
-              <span className="badge">Total Stops: <strong>{route.totalStations}</strong></span>
+              <span className="badge">Type: <strong>{route.typeName}</strong></span>
+              <span className="badge">⏱️ ~<strong>{route.totalTime}</strong> mins</span>
+              <span className="badge">📏 <strong>{route.totalDist}</strong> km</span>
+              <span className="badge">Stops: <strong>{route.totalStations}</strong></span>
               <span className="badge">Interchanges: <strong>{route.interchange}</strong></span>
             </div>
           </div>
@@ -337,7 +417,6 @@ export default function App() {
           <div className="route-list">
             {route.steps.map((step, idx) => {
               const lineColor = LINE_COLORS[step.line] || '#0072CE';
-              const nextColor = step.nextLine ? (LINE_COLORS[step.nextLine] || '#0072CE') : null;
 
               return (
                 <div key={idx} className="route-item">
