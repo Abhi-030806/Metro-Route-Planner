@@ -1,278 +1,376 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import Header from './components/Header';
-import StationAutocomplete from './components/StationAutocomplete';
-import RouteSummaryCards from './components/RouteSummaryCards';
-import JourneyTimeline from './components/JourneyTimeline';
-import MetroMapVisualizer from './components/MetroMapVisualizer';
-import LinesDirectoryModal from './components/LinesDirectoryModal';
-import { StationTrie } from './utils/trie';
-import { computeDijkstraRoute } from './utils/dijkstra';
+import React, { useState, useMemo } from 'react';
 import metroData from './data/metroData.json';
+import './App.css';
 
-const POPULAR_ROUTES = [
-  { from: 'Kashmere Gate', to: 'Botanical Garden', label: 'Kashmere Gate ➔ Botanical Garden' },
-  { from: 'Rajiv Chowk', to: 'Hauz Khas', label: 'Rajiv Chowk ➔ Hauz Khas' },
-  { from: 'New Delhi', to: 'Dwarka Sector 21', label: 'New Delhi ➔ Dwarka Sec 21' },
-  { from: 'Inderlok', to: 'Lajpat Nagar', label: 'Inderlok ➔ Lajpat Nagar' },
-  { from: 'Dwarka Sector 21', to: 'Noida Sector 52', label: 'Dwarka Sec 21 ➔ Noida Sec 52' }
-];
+// Line colors lookup for Delhi Metro
+const LINE_COLORS = {
+  'Yellow': '#FFCC00',
+  'Blue': '#0072CE',
+  'Blue_Vaishali': '#0099FF',
+  'Red': '#E31B23',
+  'Green': '#00A859',
+  'Green_Branch': '#2E7D32',
+  'Violet': '#8A2BE2',
+  'Pink': '#FF69B4',
+  'Magenta': '#D81B60',
+  'Rapid Metro': '#00A88F',
+  'Airport Express': '#FF8200',
+  'Aqua': '#00CED1',
+  'Grey': '#808080'
+};
 
+// ----------------- TRIE PREFIX SEARCH -----------------
+class TrieNode {
+  constructor() {
+    this.children = {};
+    this.isEnd = false;
+    this.originalWord = '';
+  }
+}
+
+class Trie {
+  constructor() {
+    this.root = new TrieNode();
+  }
+
+  insert(word) {
+    let node = this.root;
+    for (const ch of word.toLowerCase()) {
+      if (!node.children[ch]) {
+        node.children[ch] = new TrieNode();
+      }
+      node = node.children[ch];
+    }
+    node.isEnd = true;
+    node.originalWord = word;
+  }
+
+  getSuggestions(prefix, limit = 8) {
+    if (!prefix || !prefix.trim()) return [];
+    let node = this.root;
+    for (const ch of prefix.toLowerCase()) {
+      if (!node.children[ch]) {
+        // Fallback: substring match if prefix has no direct match
+        return metroData.stations
+          .filter(s => s.toLowerCase().includes(prefix.toLowerCase()))
+          .slice(0, limit);
+      }
+      node = node.children[ch];
+    }
+
+    const ans = [];
+    const dfs = (curr) => {
+      if (!curr || ans.length >= limit) return;
+      if (curr.isEnd) ans.push(curr.originalWord);
+      for (const key of Object.keys(curr.children).sort()) {
+        dfs(curr.children[key]);
+      }
+    };
+    dfs(node);
+    return ans;
+  }
+}
+
+// ----------------- DIJKSTRA ROUTING ENGINE -----------------
+function runDijkstra(station1, station2) {
+  const { nodes, adjacency, stationToNodes } = metroData;
+
+  const srcNodeIds = stationToNodes[station1];
+  const destNodeIds = stationToNodes[station2];
+
+  if (!srcNodeIds || !destNodeIds) return null;
+
+  let bestCost = Infinity;
+  let bestPath = null;
+
+  for (const src of srcNodeIds) {
+    for (const dest of destNodeIds) {
+      // Dijkstra from src to dest
+      const n = nodes.length;
+      const dist = new Array(n).fill(Infinity);
+      const parent = new Array(n).fill(-1);
+      const visited = new Array(n).fill(false);
+
+      dist[src] = 0;
+
+      for (let count = 0; count < n; count++) {
+        let u = -1;
+        let minD = Infinity;
+
+        for (let i = 0; i < n; i++) {
+          if (!visited[i] && dist[i] < minD) {
+            minD = dist[i];
+            u = i;
+          }
+        }
+
+        if (u === -1 || u === dest) break;
+        visited[u] = true;
+
+        const edges = adjacency[u] || [];
+        for (const e of edges) {
+          const v = e.to;
+          // Matching C++ cost weight: 0*time + 0*dist + 1*transfer
+          const wt = e.isTransfer ? 1 : 0;
+          if (dist[u] + wt < dist[v]) {
+            dist[v] = dist[u] + wt;
+            parent[v] = u;
+          }
+        }
+      }
+
+      if (dist[dest] < bestCost) {
+        bestCost = dist[dest];
+        const path = [];
+        for (let cur = dest; cur !== -1; cur = parent[cur]) {
+          path.push(cur);
+        }
+        path.reverse();
+        bestPath = path;
+      }
+    }
+  }
+
+  if (!bestPath || bestPath.length === 0) return null;
+
+  // Build route details matching getPath in C++
+  const routeNodes = bestPath.map(id => nodes[id]);
+  const steps = [];
+  let interchange = 0;
+
+  for (let i = 0; i < routeNodes.length; i++) {
+    const curr = routeNodes[i];
+    const isChange = (i + 1 < routeNodes.length && curr.station === routeNodes[i + 1].station);
+
+    if (isChange) {
+      interchange++;
+      steps.push({
+        station: curr.station,
+        line: curr.line,
+        nextLine: routeNodes[i + 1].line,
+        isChange: true
+      });
+      // Skip duplicate station row
+      i++;
+    } else {
+      steps.push({
+        station: curr.station,
+        line: curr.line,
+        isChange: false
+      });
+    }
+  }
+
+  return {
+    source: station1,
+    destination: station2,
+    startLine: routeNodes[0].line,
+    steps,
+    interchange,
+    totalStations: steps.length
+  };
+}
+
+// ----------------- MAIN APP COMPONENT -----------------
 export default function App() {
   const [source, setSource] = useState('Kashmere Gate');
   const [destination, setDestination] = useState('Botanical Garden');
-  const [routingMode, setRoutingMode] = useState('fastest');
-  const [isLinesModalOpen, setIsLinesModalOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState('itinerary'); // 'itinerary' | 'schematic'
+  const [sourceSuggestions, setSourceSuggestions] = useState([]);
+  const [destSuggestions, setDestSuggestions] = useState([]);
+  const [route, setRoute] = useState(null);
+  const [hasSearched, setHasSearched] = useState(false);
 
-  // Initialize Trie
-  const { trie, linesLookup } = useMemo(() => {
-    const t = new StationTrie();
-    const lookup = {};
-
-    for (const line of metroData.lines) {
-      lookup[line.id] = line;
-      lookup[line.name] = line;
-      for (const st of line.stations) {
-        t.insert(st, line.name);
-      }
+  // Initialize Trie once
+  const trie = useMemo(() => {
+    const t = new Trie();
+    for (const station of metroData.stations) {
+      t.insert(station);
     }
-
-    return { trie: t, linesLookup: lookup };
+    return t;
   }, []);
 
-  // Compute Route using O((V + E) log V) Dijkstra Engine
-  const computedRoute = useMemo(() => {
-    if (!source || !destination) return null;
-    return computeDijkstraRoute(metroData, source, destination, routingMode);
-  }, [source, destination, routingMode]);
-
-  // Handle station selection from child components
-  const handleSelectStation = (type, stationName) => {
-    if (type === 'source') {
-      setSource(stationName);
-    } else {
-      setDestination(stationName);
-    }
+  const handleSourceChange = (val) => {
+    setSource(val);
+    setSourceSuggestions(trie.getSuggestions(val));
   };
 
-  // Swap source and destination
-  const handleSwapStations = () => {
+  const handleDestChange = (val) => {
+    setDestination(val);
+    setDestSuggestions(trie.getSuggestions(val));
+  };
+
+  const handleFindRoute = (e) => {
+    if (e) e.preventDefault();
+    if (!source.trim() || !destination.trim()) return;
+
+    if (source.trim() === destination.trim()) {
+      alert('Source and destination are the same station!');
+      return;
+    }
+
+    const res = runDijkstra(source.trim(), destination.trim());
+    setRoute(res);
+    setHasSearched(true);
+    setSourceSuggestions([]);
+    setDestSuggestions([]);
+  };
+
+  const handleSwap = () => {
+    const temp = source;
     setSource(destination);
-    setDestination(source);
+    setDestination(temp);
+    setSourceSuggestions([]);
+    setDestSuggestions([]);
   };
 
   return (
-    <div className="metro-app-root">
-      <Header
-        totalStations={metroData.stations.length}
-        totalLines={metroData.lines.length}
-        onOpenLinesModal={() => setIsLinesModalOpen(true)}
-      />
+    <div className="container">
+      {/* Header */}
+      <header className="header">
+        <h1>🚇 Delhi Metro Route Planner</h1>
+        <p>Find shortest paths and line interchanges across 250+ Delhi Metro stations</p>
+      </header>
 
-      <main className="main-content-layout">
-        {/* Route Planner Control Panel */}
-        <section className="planner-control-card">
-          <div className="control-header">
-            <div className="badge-tag">ROUTE ENGINE</div>
-            <h2 className="control-title">Plan Your Transit Journey</h2>
-            <p className="control-desc">
-              Select origin and destination to compute optimal shortest path, transfer timings, and line interchanges.
-            </p>
+      {/* Input Card */}
+      <div className="card">
+        <form onSubmit={handleFindRoute} className="form-grid">
+          {/* Source Input */}
+          <div className="input-group">
+            <label>Source Station:</label>
+            <input
+              type="text"
+              value={source}
+              onChange={(e) => handleSourceChange(e.target.value)}
+              placeholder="Type station name (e.g. Rajiv Chowk)..."
+              autoComplete="off"
+            />
+            {sourceSuggestions.length > 0 && (
+              <ul className="suggestions-list">
+                {sourceSuggestions.map((st) => (
+                  <li
+                    key={st}
+                    onClick={() => {
+                      setSource(st);
+                      setSourceSuggestions([]);
+                    }}
+                  >
+                    {st}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
 
-          <div className="route-inputs-container">
-            <div className="inputs-column">
-              <StationAutocomplete
-                label="Origin Station"
-                value={source}
-                onChange={setSource}
-                onSelect={(val) => setSource(val)}
-                placeholder="Search starting station..."
-                trie={trie}
-                linesLookup={linesLookup}
-                iconType="source"
-              />
-
-              <div className="swap-button-row">
-                <button
-                  type="button"
-                  className="swap-stations-btn"
-                  onClick={handleSwapStations}
-                  title="Swap Origin and Destination"
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M7 16V4M7 4L3 8M7 4L11 8M17 8V20M17 20L21 16M17 20L13 16" />
-                  </svg>
-                  <span>Swap</span>
-                </button>
-              </div>
-
-              <StationAutocomplete
-                label="Destination Station"
-                value={destination}
-                onChange={setDestination}
-                onSelect={(val) => setDestination(val)}
-                placeholder="Search destination station..."
-                trie={trie}
-                linesLookup={linesLookup}
-                iconType="destination"
-              />
-            </div>
-
-            {/* Routing Preferences Mode */}
-            <div className="routing-modes-panel">
-              <label className="mode-panel-label">Route Optimization Criteria</label>
-              <div className="modes-pill-group">
-                <button
-                  type="button"
-                  className={`mode-btn ${routingMode === 'fastest' ? 'active' : ''}`}
-                  onClick={() => setRoutingMode('fastest')}
-                >
-                  <span className="mode-icon">⚡</span>
-                  <div className="mode-text">
-                    <strong>Fastest Time</strong>
-                    <small>Minimizes transit & interchange minutes</small>
-                  </div>
-                </button>
-
-                <button
-                  type="button"
-                  className={`mode-btn ${routingMode === 'distance' ? 'active' : ''}`}
-                  onClick={() => setRoutingMode('distance')}
-                >
-                  <span className="mode-icon">📏</span>
-                  <div className="mode-text">
-                    <strong>Shortest Distance</strong>
-                    <small>Computes minimum physical track km</small>
-                  </div>
-                </button>
-
-                <button
-                  type="button"
-                  className={`mode-btn ${routingMode === 'fewest_interchanges' ? 'active' : ''}`}
-                  onClick={() => setRoutingMode('fewest_interchanges')}
-                >
-                  <span className="mode-icon">🔄</span>
-                  <div className="mode-text">
-                    <strong>Fewest Interchanges</strong>
-                    <small>Prioritizes continuous line travel</small>
-                  </div>
-                </button>
-              </div>
-            </div>
+          {/* Swap Button */}
+          <div className="swap-box">
+            <button type="button" className="swap-btn" onClick={handleSwap} title="Swap stations">
+              ⇅ Swap
+            </button>
           </div>
 
-          {/* Quick Popular Routes */}
-          <div className="popular-routes-bar">
-            <span className="popular-label">Popular Hubs:</span>
-            <div className="popular-chips">
-              {POPULAR_ROUTES.map((route, i) => (
-                <button
-                  key={i}
-                  className="quick-route-chip"
-                  onClick={() => {
-                    setSource(route.from);
-                    setDestination(route.to);
-                  }}
-                >
-                  {route.label}
-                </button>
-              ))}
-            </div>
+          {/* Destination Input */}
+          <div className="input-group">
+            <label>Destination Station:</label>
+            <input
+              type="text"
+              value={destination}
+              onChange={(e) => handleDestChange(e.target.value)}
+              placeholder="Type station name (e.g. Botanical Garden)..."
+              autoComplete="off"
+            />
+            {destSuggestions.length > 0 && (
+              <ul className="suggestions-list">
+                {destSuggestions.map((st) => (
+                  <li
+                    key={st}
+                    onClick={() => {
+                      setDestination(st);
+                      setDestSuggestions([]);
+                    }}
+                  >
+                    {st}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
-        </section>
 
-        {/* Results & Visualizer Section */}
-        {computedRoute && computedRoute.found ? (
-          <section className="results-display-section">
-            <RouteSummaryCards route={computedRoute} />
+          {/* Action Buttons */}
+          <div className="button-group">
+            <button type="submit" className="find-btn">
+              🔍 Find Route
+            </button>
+          </div>
+        </form>
 
-            <div className="view-toggle-bar">
-              <div className="tabs-wrap">
-                <button
-                  className={`view-tab-btn ${activeTab === 'itinerary' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('itinerary')}
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <line x1="8" y1="6" x2="21" y2="6" />
-                    <line x1="8" y1="12" x2="21" y2="12" />
-                    <line x1="8" y1="18" x2="21" y2="18" />
-                    <line x1="3" y1="6" x2="3.01" y2="6" />
-                    <line x1="3" y1="12" x2="3.01" y2="12" />
-                    <line x1="3" y1="18" x2="3.01" y2="18" />
-                  </svg>
-                  <span>Transit Itinerary</span>
-                </button>
-                <button
-                  className={`view-tab-btn ${activeTab === 'schematic' ? 'active' : ''}`}
-                  onClick={() => setActiveTab('schematic')}
-                >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                  </svg>
-                  <span>Network Schematic</span>
-                </button>
-              </div>
-
-              <span className="route-path-summary">
-                Path: {computedRoute.steps.length} nodes computed in O((V + E) log V)
-              </span>
-            </div>
-
-            <div className="tab-view-content">
-              {activeTab === 'itinerary' ? (
-                <div className="itinerary-schematic-split">
-                  <JourneyTimeline route={computedRoute} linesLookup={linesLookup} />
-                  <MetroMapVisualizer
-                    lines={metroData.lines}
-                    activeRoute={computedRoute}
-                    onSelectStation={handleSelectStation}
-                  />
-                </div>
-              ) : (
-                <MetroMapVisualizer
-                  lines={metroData.lines}
-                  activeRoute={computedRoute}
-                  onSelectStation={handleSelectStation}
-                />
-              )}
-            </div>
-          </section>
-        ) : (
-          <section className="empty-state-card">
-            <div className="empty-icon-wrap">
-              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#9ca3af" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M12 8v4M12 16h.01" />
-              </svg>
-            </div>
-            <h3>Select Source & Destination</h3>
-            <p>
-              Type in the search inputs above or pick from popular hubs to calculate shortest paths,
-              transfer times, and line interchange instructions.
-            </p>
-          </section>
-        )}
-      </main>
-
-      <footer className="app-footer">
-        <div className="footer-content">
-          <p>
-            <strong>Delhi Metro Route Planner</strong> • Built with React, C++ STL, Dijkstra & Trie Algorithms.
-          </p>
-          <p className="footer-sub">
-            Real-world dataset spanning 250+ stations across 13 transit lines and 30 interchange hubs.
-          </p>
+        {/* Quick Station Picks */}
+        <div className="quick-picks">
+          <span>Popular:</span>
+          <button type="button" onClick={() => { setSource('Rajiv Chowk'); setDestination('Hauz Khas'); }}>
+            Rajiv Chowk ➔ Hauz Khas
+          </button>
+          <button type="button" onClick={() => { setSource('Kashmere Gate'); setDestination('Botanical Garden'); }}>
+            Kashmere Gate ➔ Botanical Garden
+          </button>
+          <button type="button" onClick={() => { setSource('New Delhi'); setDestination('Dwarka Sector 21'); }}>
+            New Delhi ➔ Dwarka Sec 21
+          </button>
         </div>
-      </footer>
+      </div>
 
-      <LinesDirectoryModal
-        lines={metroData.lines}
-        isOpen={isLinesModalOpen}
-        onClose={() => setIsLinesModalOpen(false)}
-        onSelectStation={handleSelectStation}
-      />
+      {/* Results View */}
+      {route && (
+        <div className="card result-card">
+          <div className="result-header">
+            <h2>Journey Summary</h2>
+            <div className="badge-row">
+              <span className="badge">Total Stops: <strong>{route.totalStations}</strong></span>
+              <span className="badge">Interchanges: <strong>{route.interchange}</strong></span>
+            </div>
+          </div>
+
+          <div className="board-info" style={{ borderLeft: `5px solid ${LINE_COLORS[route.startLine] || '#0072CE'}` }}>
+            Board <strong>{route.startLine} Line</strong> at <strong>{route.source}</strong>
+          </div>
+
+          {/* Step-by-Step Route List */}
+          <div className="route-list">
+            {route.steps.map((step, idx) => {
+              const lineColor = LINE_COLORS[step.line] || '#0072CE';
+              const nextColor = step.nextLine ? (LINE_COLORS[step.nextLine] || '#0072CE') : null;
+
+              return (
+                <div key={idx} className="route-item">
+                  <div className="bullet" style={{ backgroundColor: lineColor }}></div>
+                  <div className="station-details">
+                    <span className="station-name">{step.station}</span>
+                    <span className="line-tag" style={{ backgroundColor: lineColor }}>
+                      {step.line}
+                    </span>
+
+                    {step.isChange && (
+                      <div className="interchange-alert">
+                        🔄 Change here from <strong>{step.line}</strong> to <strong>{step.nextLine}</strong> Line
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {hasSearched && !route && (
+        <div className="card no-route">
+          <p>❌ No path found between <strong>{source}</strong> and <strong>{destination}</strong>. Please check station names.</p>
+        </div>
+      )}
+
+      {/* Footer */}
+      <footer className="footer">
+        <p>Delhi Metro Route Planner • Built with React & C++ STL (Dijkstra + Trie)</p>
+      </footer>
     </div>
   );
 }
