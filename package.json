@@ -1,0 +1,22 @@
+{
+  "name": "metro-route-planner",
+  "version": "2.0.0",
+  "description": "Delhi Metro Route Planner with Dijkstra shortest path engine, Trie autocomplete, and React frontend",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "build:cpp": "g++ -std=c++17 -O2 codes/engine.cpp -o metro",
+    "run:cpp": "g++ -std=c++17 -O2 codes/engine.cpp -o metro && ./metro"
+  },
+  "keywords": [
+    "delhi-metro",
+    "dijkstra-algorithm",
+    "trie",
+    "graph-algorithms",
+    "react",
+    "cpp"
+  ],
+  "author": "Abhishek",
+  "license": "MIT"
+}

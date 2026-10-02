@@ -1,0 +1,9504 @@
+{
+  "stations": [
+    "AIIMS",
+    "Adarsh Nagar",
+    "Akshardham",
+    "Alpha 1 Greater Noida",
+    "Anand Vihar",
+    "Arjan Garh",
+    "Arthala",
+    "Ashok Park Main",
+    "Ashram",
+    "Azadpur",
+    "Badarpur Border",
+    "Badkal Mor",
+    "Bahadurgarh City",
+    "Barakhamba",
+    "Bata Chowk",
+    "Belvedere Towers",
+    "Bhikaji Cama Place",
+    "Botanical Garden",
+    "Brigadier Hoshiar Singh",
+    "Central Secretariat",
+    "Chandni Chowk",
+    "Chawri Bazar",
+    "Chhattarpur",
+    "Chirag Delhi",
+    "Civil Lines",
+    "Cyber City",
+    "DLF Phase 1",
+    "DLF Phase 2",
+    "DLF Phase 3",
+    "Dabri Mor - Janakpuri South",
+    "Dashrath Puri",
+    "Delhi Aerocity",
+    "Delhi Cantt",
+    "Delhi Gate",
+    "Delta 1 Greater Noida",
+    "Depot Greater Noida",
+    "Dhansa Bus Stand",
+    "Dhaula Kuan",
+    "Dilli Haat INA",
+    "Dilshad Garden",
+    "Durgabai Deshmukh South Campus",
+    "Dwarka",
+    "Dwarka Mor",
+    "Dwarka Sector 10",
+    "Dwarka Sector 11",
+    "Dwarka Sector 12",
+    "Dwarka Sector 13",
+    "Dwarka Sector 14",
+    "Dwarka Sector 21",
+    "Dwarka Sector 8",
+    "Dwarka Sector 9",
+    "ESI BASAI DARAPUR",
+    "East Azad Nagar",
+    "Escorts Mujesar",
+    "GNIDA Office",
+    "Ghevra Metro Station",
+    "Ghitorni",
+    "Gokulpuri",
+    "Golf Course",
+    "Govind Puri",
+    "Greater Kailash",
+    "Green Park",
+    "Guru Dronacharya",
+    "Guru Tegh Bahadur Nagar",
+    "Haiderpur Badli Mor",
+    "Hauz Khas",
+    "Hindon River",
+    "Huda City Centre",
+    "IFFCO Chowk",
+    "IGI Airport",
+    "IIT Delhi",
+    "IP Extension",
+    "ITO",
+    "Inderlok",
+    "Indraprastha",
+    "JAMIA MILLIA ISLAMIA",
+    "Jaffrabad",
+    "Jahangirpuri",
+    "Jama Masjid",
+    "Janak Puri East",
+    "Janak Puri West",
+    "Jangpura",
+    "Janpath",
+    "Jasola",
+    "Jasola Vihar Shaheen Bagh",
+    "Jawaharlal Nehru Stadium",
+    "Jhandewalan",
+    "Jhil Mil",
+    "Johri Enclave",
+    "Jorbagh",
+    "Kailash Colony",
+    "Kalindi Kunj",
+    "Kalkaji Mandir",
+    "Kanhaiya Nagar",
+    "Karkar Duma",
+    "Karkarduma Court",
+    "Karol Bagh",
+    "Kashmere Gate",
+    "Kaushambi",
+    "Keshav Puram",
+    "Khan Market",
+    "Kirti Nagar",
+    "Knowledge Park II",
+    "Kohat Enclave",
+    "Krishna Nagar",
+    "Lajpat Nagar",
+    "Lal Quila",
+    "Laxmi Nagar",
+    "Lok Kalyan Marg",
+    "MG Road",
+    "Madipur",
+    "Maharaja Surajmal Stadium",
+    "Majlis Park",
+    "Major Mohit Sharma",
+    "Malviya Nagar",
+    "Mandawali - West Vinod Nagar",
+    "Mandi House",
+    "Mansarovar Park",
+    "Maujpur",
+    "Maya Puri",
+    "Mayur Vihar Extention",
+    "Mayur Vihar Phase-1",
+    "Mayur Vihar Pocket I",
+    "Mewala Maharajpur",
+    "Model Town",
+    "Mohan Estate",
+    "Mohan Nagar",
+    "Moolchand",
+    "Moti Nagar",
+    "Moulsari Avenue",
+    "Mundka",
+    "Mundka Industrial Area (MIA)",
+    "Munirka",
+    "N.H.P.C. Chowk",
+    "NSEZ Noida",
+    "Najafgarh",
+    "Nangli",
+    "Nangloi",
+    "Nangloi Railway Station",
+    "Naraina Vihar",
+    "Nawada",
+    "Neelam Chowk Ajronda",
+    "Nehru Enclave",
+    "Nehru Place",
+    "Netaji Subash Place",
+    "New Ashok Nagar",
+    "New Delhi",
+    "New Delhi-Airport Express",
+    "Nirman Vihar",
+    "Noida City Center",
+    "Noida Electronic City",
+    "Noida Sector 101",
+    "Noida Sector 137",
+    "Noida Sector 142",
+    "Noida Sector 143",
+    "Noida Sector 144",
+    "Noida Sector 145",
+    "Noida Sector 146",
+    "Noida Sector 147",
+    "Noida Sector 148",
+    "Noida Sector 15",
+    "Noida Sector 16",
+    "Noida Sector 18",
+    "Noida Sector 34",
+    "Noida Sector 50",
+    "Noida Sector 51",
+    "Noida Sector 52",
+    "Noida Sector 59",
+    "Noida Sector 61",
+    "Noida Sector 62",
+    "Noida Sector 76",
+    "Noida Sector 81",
+    "Noida Sector 83",
+    "Okhla",
+    "Okhla Bird Sanctuary",
+    "Okhla NSIC",
+    "Okhla Vihar",
+    "Old Faridabad",
+    "Palam",
+    "Panchsheel Park",
+    "Pandit Shree Ram Sharma",
+    "Pari Chowk Greater Noida",
+    "Paschim Vihar (East)",
+    "Paschim Vihar (West)",
+    "Patel Chowk",
+    "Patel Nagar",
+    "Peera Garhi",
+    "Pitam Pura",
+    "Pratap Nagar",
+    "Preet Vihar",
+    "Pul Bangash",
+    "Punjabi Bagh",
+    "Punjabi Bagh West",
+    "Qutab Minar",
+    "R K Ashram Marg",
+    "RK Puram",
+    "Raj Bagh",
+    "Raja Nahar Singh",
+    "Rajdhani Park",
+    "Rajendra Place",
+    "Rajiv Chowk",
+    "Rajouri Garden",
+    "Ramesh Nagar",
+    "Rithala",
+    "Rohini East",
+    "Rohini Sector 18-19",
+    "Rohini West",
+    "Sadar Bazaar Cantonment",
+    "Saket",
+    "Samaypur Badli",
+    "Sant Surdas - Sihi",
+    "Sarai",
+    "Sarai Kale Khan Hazrat Nizamuddin",
+    "Sarita Vihar",
+    "Sarojini Nagar",
+    "Satguru Ram Singh Marg",
+    "Sector 28 Faridabad",
+    "Sector 42-43",
+    "Sector 53-54",
+    "Sector 54 Chowk",
+    "Sector 55-66",
+    "Seelampur",
+    "Shadipur",
+    "Shahdara",
+    "Shaheed Nagar",
+    "Shaheed Sthal (New Bus Adda)",
+    "Shakurpur",
+    "Shalimar Bagh",
+    "Shankar Vihar",
+    "Shastri Nagar",
+    "Shastri Park",
+    "Shiv Vihar",
+    "Shivaji Park",
+    "Shivaji Stadium",
+    "Shyam Park",
+    "Sikandarpur",
+    "Sir Vishweshwaraiah Moti Bagh",
+    "South Extension",
+    "Subhash Nagar",
+    "Sukhdev Vihar",
+    "Sultanpur",
+    "Supreme Court (Pragati Maidan)",
+    "Tagore Garden",
+    "Terminal 1 IGI Airport",
+    "Tikri Border",
+    "Tikri Kalan",
+    "Tilak Nagar",
+    "Tis Hazari",
+    "Trilokpuri Sanjay Lake",
+    "Tughlakabad",
+    "Udyog Bhawan",
+    "Udyog Nagar",
+    "Uttam Nagar East",
+    "Uttam Nagar West",
+    "Vaishali",
+    "Vasant Vihar",
+    "Vidhan Sabha",
+    "Vinobapuri",
+    "Vinod Nagar East",
+    "Vishwavidyalaya",
+    "Welcome",
+    "Yamuna Bank"
+  ],
+  "lines": [
+    {
+      "id": "Blue",
+      "name": "Blue Line",
+      "color": "#0072CE",
+      "textColor": "#ffffff",
+      "stations": [
+        "Dwarka Sector 21",
+        "Dwarka Sector 8",
+        "Dwarka Sector 9",
+        "Dwarka Sector 10",
+        "Dwarka Sector 11",
+        "Dwarka Sector 12",
+        "Dwarka Sector 13",
+        "Dwarka Sector 14",
+        "Dwarka",
+        "Dwarka Mor",
+        "Nawada",
+        "Uttam Nagar West",
+        "Uttam Nagar East",
+        "Janak Puri West",
+        "Janak Puri East",
+        "Tilak Nagar",
+        "Subhash Nagar",
+        "Tagore Garden",
+        "Rajouri Garden",
+        "Ramesh Nagar",
+        "Moti Nagar",
+        "Kirti Nagar",
+        "Shadipur",
+        "Patel Nagar",
+        "Rajendra Place",
+        "Karol Bagh",
+        "Jhandewalan",
+        "R K Ashram Marg",
+        "Rajiv Chowk",
+        "Barakhamba",
+        "Mandi House",
+        "Supreme Court (Pragati Maidan)",
+        "Indraprastha",
+        "Yamuna Bank",
+        "Akshardham",
+        "Mayur Vihar Phase-1",
+        "Mayur Vihar Extention",
+        "New Ashok Nagar",
+        "Noida Sector 15",
+        "Noida Sector 16",
+        "Noida Sector 18",
+        "Botanical Garden",
+        "Golf Course",
+        "Noida City Center",
+        "Noida Sector 34",
+        "Noida Sector 52",
+        "Noida Sector 61",
+        "Noida Sector 59",
+        "Noida Sector 62",
+        "Noida Electronic City"
+      ],
+      "detailedStations": [
+        {
+          "station": "Dwarka Sector 21",
+          "distance": 0.0,
+          "nodeId": 0
+        },
+        {
+          "station": "Dwarka Sector 8",
+          "distance": 1.7,
+          "nodeId": 1
+        },
+        {
+          "station": "Dwarka Sector 9",
+          "distance": 2.7,
+          "nodeId": 2
+        },
+        {
+          "station": "Dwarka Sector 10",
+          "distance": 3.8,
+          "nodeId": 3
+        },
+        {
+          "station": "Dwarka Sector 11",
+          "distance": 4.8,
+          "nodeId": 4
+        },
+        {
+          "station": "Dwarka Sector 12",
+          "distance": 5.8,
+          "nodeId": 5
+        },
+        {
+          "station": "Dwarka Sector 13",
+          "distance": 6.7,
+          "nodeId": 6
+        },
+        {
+          "station": "Dwarka Sector 14",
+          "distance": 7.6,
+          "nodeId": 7
+        },
+        {
+          "station": "Dwarka",
+          "distance": 9.1,
+          "nodeId": 8
+        },
+        {
+          "station": "Dwarka Mor",
+          "distance": 10.2,
+          "nodeId": 9
+        },
+        {
+          "station": "Nawada",
+          "distance": 11.4,
+          "nodeId": 10
+        },
+        {
+          "station": "Uttam Nagar West",
+          "distance": 12.4,
+          "nodeId": 11
+        },
+        {
+          "station": "Uttam Nagar East",
+          "distance": 13.4,
+          "nodeId": 12
+        },
+        {
+          "station": "Janak Puri West",
+          "distance": 14.7,
+          "nodeId": 13
+        },
+        {
+          "station": "Janak Puri East",
+          "distance": 15.7,
+          "nodeId": 14
+        },
+        {
+          "station": "Tilak Nagar",
+          "distance": 16.7,
+          "nodeId": 15
+        },
+        {
+          "station": "Subhash Nagar",
+          "distance": 17.6,
+          "nodeId": 16
+        },
+        {
+          "station": "Tagore Garden",
+          "distance": 18.5,
+          "nodeId": 17
+        },
+        {
+          "station": "Rajouri Garden",
+          "distance": 19.6,
+          "nodeId": 18
+        },
+        {
+          "station": "Ramesh Nagar",
+          "distance": 20.6,
+          "nodeId": 19
+        },
+        {
+          "station": "Moti Nagar",
+          "distance": 21.8,
+          "nodeId": 20
+        },
+        {
+          "station": "Kirti Nagar",
+          "distance": 22.8,
+          "nodeId": 21
+        },
+        {
+          "station": "Shadipur",
+          "distance": 23.5,
+          "nodeId": 22
+        },
+        {
+          "station": "Patel Nagar",
+          "distance": 24.8,
+          "nodeId": 23
+        },
+        {
+          "station": "Rajendra Place",
+          "distance": 25.7,
+          "nodeId": 24
+        },
+        {
+          "station": "Karol Bagh",
+          "distance": 26.7,
+          "nodeId": 25
+        },
+        {
+          "station": "Jhandewalan",
+          "distance": 27.9,
+          "nodeId": 26
+        },
+        {
+          "station": "R K Ashram Marg",
+          "distance": 28.9,
+          "nodeId": 27
+        },
+        {
+          "station": "Rajiv Chowk",
+          "distance": 30.1,
+          "nodeId": 28
+        },
+        {
+          "station": "Barakhamba",
+          "distance": 30.8,
+          "nodeId": 29
+        },
+        {
+          "station": "Mandi House",
+          "distance": 31.8,
+          "nodeId": 30
+        },
+        {
+          "station": "Supreme Court (Pragati Maidan)",
+          "distance": 32.6,
+          "nodeId": 31
+        },
+        {
+          "station": "Indraprastha",
+          "distance": 33.4,
+          "nodeId": 32
+        },
+        {
+          "station": "Yamuna Bank",
+          "distance": 35.2,
+          "nodeId": 33
+        },
+        {
+          "station": "Akshardham",
+          "distance": 36.5,
+          "nodeId": 34
+        },
+        {
+          "station": "Mayur Vihar Phase-1",
+          "distance": 38.3,
+          "nodeId": 35
+        },
+        {
+          "station": "Mayur Vihar Extention",
+          "distance": 39.5,
+          "nodeId": 36
+        },
+        {
+          "station": "New Ashok Nagar",
+          "distance": 40.4,
+          "nodeId": 37
+        },
+        {
+          "station": "Noida Sector 15",
+          "distance": 41.4,
+          "nodeId": 38
+        },
+        {
+          "station": "Noida Sector 16",
+          "distance": 42.5,
+          "nodeId": 39
+        },
+        {
+          "station": "Noida Sector 18",
+          "distance": 43.6,
+          "nodeId": 40
+        },
+        {
+          "station": "Botanical Garden",
+          "distance": 44.7,
+          "nodeId": 41
+        },
+        {
+          "station": "Golf Course",
+          "distance": 45.9,
+          "nodeId": 42
+        },
+        {
+          "station": "Noida City Center",
+          "distance": 47.2,
+          "nodeId": 43
+        },
+        {
+          "station": "Noida Sector 34",
+          "distance": 48.1,
+          "nodeId": 44
+        },
+        {
+          "station": "Noida Sector 52",
+          "distance": 49.3,
+          "nodeId": 45
+        },
+        {
+          "station": "Noida Sector 61",
+          "distance": 50.5,
+          "nodeId": 46
+        },
+        {
+          "station": "Noida Sector 59",
+          "distance": 51.5,
+          "nodeId": 47
+        },
+        {
+          "station": "Noida Sector 62",
+          "distance": 52.7,
+          "nodeId": 48
+        },
+        {
+          "station": "Noida Electronic City",
+          "distance": 53.9,
+          "nodeId": 49
+        }
+      ]
+    },
+    {
+      "id": "Blue_Vaishali",
+      "name": "Blue Line (Branch)",
+      "color": "#0099FF",
+      "textColor": "#ffffff",
+      "stations": [
+        "Yamuna Bank",
+        "Laxmi Nagar",
+        "Nirman Vihar",
+        "Preet Vihar",
+        "Karkar Duma",
+        "Anand Vihar",
+        "Kaushambi",
+        "Vaishali"
+      ],
+      "detailedStations": [
+        {
+          "station": "Yamuna Bank",
+          "distance": 0.0,
+          "nodeId": 50
+        },
+        {
+          "station": "Laxmi Nagar",
+          "distance": 1.3,
+          "nodeId": 51
+        },
+        {
+          "station": "Nirman Vihar",
+          "distance": 2.4,
+          "nodeId": 52
+        },
+        {
+          "station": "Preet Vihar",
+          "distance": 3.4,
+          "nodeId": 53
+        },
+        {
+          "station": "Karkar Duma",
+          "distance": 4.6,
+          "nodeId": 54
+        },
+        {
+          "station": "Anand Vihar",
+          "distance": 5.7,
+          "nodeId": 55
+        },
+        {
+          "station": "Kaushambi",
+          "distance": 6.5,
+          "nodeId": 56
+        },
+        {
+          "station": "Vaishali",
+          "distance": 8.1,
+          "nodeId": 57
+        }
+      ]
+    },
+    {
+      "id": "Yellow",
+      "name": "Yellow Line",
+      "color": "#FFD100",
+      "textColor": "#111827",
+      "stations": [
+        "Samaypur Badli",
+        "Rohini Sector 18-19",
+        "Haiderpur Badli Mor",
+        "Jahangirpuri",
+        "Adarsh Nagar",
+        "Azadpur",
+        "Model Town",
+        "Guru Tegh Bahadur Nagar",
+        "Vishwavidyalaya",
+        "Vidhan Sabha",
+        "Civil Lines",
+        "Kashmere Gate",
+        "Chandni Chowk",
+        "Chawri Bazar",
+        "New Delhi",
+        "Rajiv Chowk",
+        "Patel Chowk",
+        "Central Secretariat",
+        "Udyog Bhawan",
+        "Lok Kalyan Marg",
+        "Jorbagh",
+        "Dilli Haat INA",
+        "AIIMS",
+        "Green Park",
+        "Hauz Khas",
+        "Malviya Nagar",
+        "Saket",
+        "Qutab Minar",
+        "Chhattarpur",
+        "Sultanpur",
+        "Ghitorni",
+        "Arjan Garh",
+        "Guru Dronacharya",
+        "Sikandarpur",
+        "MG Road",
+        "IFFCO Chowk",
+        "Huda City Centre"
+      ],
+      "detailedStations": [
+        {
+          "station": "Samaypur Badli",
+          "distance": 0.0,
+          "nodeId": 58
+        },
+        {
+          "station": "Rohini Sector 18-19",
+          "distance": 0.8,
+          "nodeId": 59
+        },
+        {
+          "station": "Haiderpur Badli Mor",
+          "distance": 2.1,
+          "nodeId": 60
+        },
+        {
+          "station": "Jahangirpuri",
+          "distance": 3.4,
+          "nodeId": 61
+        },
+        {
+          "station": "Adarsh Nagar",
+          "distance": 4.7,
+          "nodeId": 62
+        },
+        {
+          "station": "Azadpur",
+          "distance": 6.2,
+          "nodeId": 63
+        },
+        {
+          "station": "Model Town",
+          "distance": 7.6,
+          "nodeId": 64
+        },
+        {
+          "station": "Guru Tegh Bahadur Nagar",
+          "distance": 9.0,
+          "nodeId": 65
+        },
+        {
+          "station": "Vishwavidyalaya",
+          "distance": 9.8,
+          "nodeId": 66
+        },
+        {
+          "station": "Vidhan Sabha",
+          "distance": 10.8,
+          "nodeId": 67
+        },
+        {
+          "station": "Civil Lines",
+          "distance": 12.1,
+          "nodeId": 68
+        },
+        {
+          "station": "Kashmere Gate",
+          "distance": 13.2,
+          "nodeId": 69
+        },
+        {
+          "station": "Chandni Chowk",
+          "distance": 14.3,
+          "nodeId": 70
+        },
+        {
+          "station": "Chawri Bazar",
+          "distance": 15.3,
+          "nodeId": 71
+        },
+        {
+          "station": "New Delhi",
+          "distance": 16.1,
+          "nodeId": 72
+        },
+        {
+          "station": "Rajiv Chowk",
+          "distance": 17.2,
+          "nodeId": 73
+        },
+        {
+          "station": "Patel Chowk",
+          "distance": 18.5,
+          "nodeId": 74
+        },
+        {
+          "station": "Central Secretariat",
+          "distance": 19.4,
+          "nodeId": 75
+        },
+        {
+          "station": "Udyog Bhawan",
+          "distance": 19.7,
+          "nodeId": 76
+        },
+        {
+          "station": "Lok Kalyan Marg",
+          "distance": 21.3,
+          "nodeId": 77
+        },
+        {
+          "station": "Jorbagh",
+          "distance": 22.5,
+          "nodeId": 78
+        },
+        {
+          "station": "Dilli Haat INA",
+          "distance": 23.8,
+          "nodeId": 79
+        },
+        {
+          "station": "AIIMS",
+          "distance": 24.6,
+          "nodeId": 80
+        },
+        {
+          "station": "Green Park",
+          "distance": 25.6,
+          "nodeId": 81
+        },
+        {
+          "station": "Hauz Khas",
+          "distance": 27.4,
+          "nodeId": 82
+        },
+        {
+          "station": "Malviya Nagar",
+          "distance": 29.1,
+          "nodeId": 83
+        },
+        {
+          "station": "Saket",
+          "distance": 30.0,
+          "nodeId": 84
+        },
+        {
+          "station": "Qutab Minar",
+          "distance": 31.7,
+          "nodeId": 85
+        },
+        {
+          "station": "Chhattarpur",
+          "distance": 33.0,
+          "nodeId": 86
+        },
+        {
+          "station": "Sultanpur",
+          "distance": 34.6,
+          "nodeId": 87
+        },
+        {
+          "station": "Ghitorni",
+          "distance": 35.9,
+          "nodeId": 88
+        },
+        {
+          "station": "Arjan Garh",
+          "distance": 38.6,
+          "nodeId": 89
+        },
+        {
+          "station": "Guru Dronacharya",
+          "distance": 40.9,
+          "nodeId": 90
+        },
+        {
+          "station": "Sikandarpur",
+          "distance": 41.9,
+          "nodeId": 91
+        },
+        {
+          "station": "MG Road",
+          "distance": 43.1,
+          "nodeId": 92
+        },
+        {
+          "station": "IFFCO Chowk",
+          "distance": 44.2,
+          "nodeId": 93
+        },
+        {
+          "station": "Huda City Centre",
+          "distance": 45.7,
+          "nodeId": 94
+        }
+      ]
+    },
+    {
+      "id": "Red",
+      "name": "Red Line",
+      "color": "#E31B23",
+      "textColor": "#ffffff",
+      "stations": [
+        "Shaheed Sthal (New Bus Adda)",
+        "Hindon River",
+        "Arthala",
+        "Mohan Nagar",
+        "Shyam Park",
+        "Major Mohit Sharma",
+        "Raj Bagh",
+        "Shaheed Nagar",
+        "Dilshad Garden",
+        "Jhil Mil",
+        "Mansarovar Park",
+        "Shahdara",
+        "Welcome",
+        "Seelampur",
+        "Shastri Park",
+        "Kashmere Gate",
+        "Tis Hazari",
+        "Pul Bangash",
+        "Pratap Nagar",
+        "Shastri Nagar",
+        "Inderlok",
+        "Kanhaiya Nagar",
+        "Keshav Puram",
+        "Netaji Subash Place",
+        "Kohat Enclave",
+        "Pitam Pura",
+        "Rohini East",
+        "Rohini West",
+        "Rithala"
+      ],
+      "detailedStations": [
+        {
+          "station": "Shaheed Sthal (New Bus Adda)",
+          "distance": 0.0,
+          "nodeId": 95
+        },
+        {
+          "station": "Hindon River",
+          "distance": 1.0,
+          "nodeId": 96
+        },
+        {
+          "station": "Arthala",
+          "distance": 2.5,
+          "nodeId": 97
+        },
+        {
+          "station": "Mohan Nagar",
+          "distance": 3.2,
+          "nodeId": 98
+        },
+        {
+          "station": "Shyam Park",
+          "distance": 4.5,
+          "nodeId": 99
+        },
+        {
+          "station": "Major Mohit Sharma",
+          "distance": 5.7,
+          "nodeId": 100
+        },
+        {
+          "station": "Raj Bagh",
+          "distance": 6.9,
+          "nodeId": 101
+        },
+        {
+          "station": "Shaheed Nagar",
+          "distance": 8.2,
+          "nodeId": 102
+        },
+        {
+          "station": "Dilshad Garden",
+          "distance": 9.4,
+          "nodeId": 103
+        },
+        {
+          "station": "Jhil Mil",
+          "distance": 10.3,
+          "nodeId": 104
+        },
+        {
+          "station": "Mansarovar Park",
+          "distance": 11.4,
+          "nodeId": 105
+        },
+        {
+          "station": "Shahdara",
+          "distance": 12.5,
+          "nodeId": 106
+        },
+        {
+          "station": "Welcome",
+          "distance": 13.7,
+          "nodeId": 107
+        },
+        {
+          "station": "Seelampur",
+          "distance": 14.8,
+          "nodeId": 108
+        },
+        {
+          "station": "Shastri Park",
+          "distance": 16.4,
+          "nodeId": 109
+        },
+        {
+          "station": "Kashmere Gate",
+          "distance": 18.5,
+          "nodeId": 110
+        },
+        {
+          "station": "Tis Hazari",
+          "distance": 19.7,
+          "nodeId": 111
+        },
+        {
+          "station": "Pul Bangash",
+          "distance": 20.6,
+          "nodeId": 112
+        },
+        {
+          "station": "Pratap Nagar",
+          "distance": 21.4,
+          "nodeId": 113
+        },
+        {
+          "station": "Shastri Nagar",
+          "distance": 23.1,
+          "nodeId": 114
+        },
+        {
+          "station": "Inderlok",
+          "distance": 24.3,
+          "nodeId": 115
+        },
+        {
+          "station": "Kanhaiya Nagar",
+          "distance": 25.5,
+          "nodeId": 116
+        },
+        {
+          "station": "Keshav Puram",
+          "distance": 26.2,
+          "nodeId": 117
+        },
+        {
+          "station": "Netaji Subash Place",
+          "distance": 27.4,
+          "nodeId": 118
+        },
+        {
+          "station": "Kohat Enclave",
+          "distance": 28.6,
+          "nodeId": 119
+        },
+        {
+          "station": "Pitam Pura",
+          "distance": 29.6,
+          "nodeId": 120
+        },
+        {
+          "station": "Rohini East",
+          "distance": 30.4,
+          "nodeId": 121
+        },
+        {
+          "station": "Rohini West",
+          "distance": 31.7,
+          "nodeId": 122
+        },
+        {
+          "station": "Rithala",
+          "distance": 32.7,
+          "nodeId": 123
+        }
+      ]
+    },
+    {
+      "id": "Green",
+      "name": "Green Line",
+      "color": "#00A859",
+      "textColor": "#ffffff",
+      "stations": [
+        "Inderlok",
+        "Ashok Park Main",
+        "Punjabi Bagh",
+        "Shivaji Park",
+        "Madipur",
+        "Paschim Vihar (East)",
+        "Paschim Vihar (West)",
+        "Peera Garhi",
+        "Udyog Nagar",
+        "Maharaja Surajmal Stadium",
+        "Nangloi",
+        "Nangloi Railway Station",
+        "Rajdhani Park",
+        "Mundka",
+        "Mundka Industrial Area (MIA)",
+        "Ghevra Metro Station",
+        "Tikri Kalan",
+        "Tikri Border",
+        "Pandit Shree Ram Sharma",
+        "Bahadurgarh City",
+        "Brigadier Hoshiar Singh"
+      ],
+      "detailedStations": [
+        {
+          "station": "Inderlok",
+          "distance": 0.0,
+          "nodeId": 124
+        },
+        {
+          "station": "Ashok Park Main",
+          "distance": 1.4,
+          "nodeId": 125
+        },
+        {
+          "station": "Punjabi Bagh",
+          "distance": 2.3,
+          "nodeId": 126
+        },
+        {
+          "station": "Shivaji Park",
+          "distance": 3.9,
+          "nodeId": 127
+        },
+        {
+          "station": "Madipur",
+          "distance": 5.0,
+          "nodeId": 128
+        },
+        {
+          "station": "Paschim Vihar (East)",
+          "distance": 5.7,
+          "nodeId": 129
+        },
+        {
+          "station": "Paschim Vihar (West)",
+          "distance": 6.7,
+          "nodeId": 130
+        },
+        {
+          "station": "Peera Garhi",
+          "distance": 7.6,
+          "nodeId": 131
+        },
+        {
+          "station": "Udyog Nagar",
+          "distance": 8.8,
+          "nodeId": 132
+        },
+        {
+          "station": "Maharaja Surajmal Stadium",
+          "distance": 9.5,
+          "nodeId": 133
+        },
+        {
+          "station": "Nangloi",
+          "distance": 10.3,
+          "nodeId": 134
+        },
+        {
+          "station": "Nangloi Railway Station",
+          "distance": 11.2,
+          "nodeId": 135
+        },
+        {
+          "station": "Rajdhani Park",
+          "distance": 12.4,
+          "nodeId": 136
+        },
+        {
+          "station": "Mundka",
+          "distance": 13.7,
+          "nodeId": 137
+        },
+        {
+          "station": "Mundka Industrial Area (MIA)",
+          "distance": 15.0,
+          "nodeId": 138
+        },
+        {
+          "station": "Ghevra Metro Station",
+          "distance": 17.1,
+          "nodeId": 139
+        },
+        {
+          "station": "Tikri Kalan",
+          "distance": 18.9,
+          "nodeId": 140
+        },
+        {
+          "station": "Tikri Border",
+          "distance": 20.2,
+          "nodeId": 141
+        },
+        {
+          "station": "Pandit Shree Ram Sharma",
+          "distance": 21.5,
+          "nodeId": 142
+        },
+        {
+          "station": "Bahadurgarh City",
+          "distance": 23.0,
+          "nodeId": 143
+        },
+        {
+          "station": "Brigadier Hoshiar Singh",
+          "distance": 24.8,
+          "nodeId": 144
+        }
+      ]
+    },
+    {
+      "id": "Green_Branch",
+      "name": "Green Line (Branch)",
+      "color": "#2E7D32",
+      "textColor": "#ffffff",
+      "stations": [
+        "Ashok Park Main",
+        "Satguru Ram Singh Marg",
+        "Kirti Nagar"
+      ],
+      "detailedStations": [
+        {
+          "station": "Ashok Park Main",
+          "distance": 0.0,
+          "nodeId": 145
+        },
+        {
+          "station": "Satguru Ram Singh Marg",
+          "distance": 1.1,
+          "nodeId": 146
+        },
+        {
+          "station": "Kirti Nagar",
+          "distance": 2.1,
+          "nodeId": 147
+        }
+      ]
+    },
+    {
+      "id": "Violet",
+      "name": "Violet Line",
+      "color": "#8A2BE2",
+      "textColor": "#ffffff",
+      "stations": [
+        "Kashmere Gate",
+        "Lal Quila",
+        "Jama Masjid",
+        "Delhi Gate",
+        "ITO",
+        "Mandi House",
+        "Janpath",
+        "Central Secretariat",
+        "Khan Market",
+        "Jawaharlal Nehru Stadium",
+        "Jangpura",
+        "Lajpat Nagar",
+        "Moolchand",
+        "Kailash Colony",
+        "Nehru Place",
+        "Kalkaji Mandir",
+        "Govind Puri",
+        "Okhla",
+        "Jasola",
+        "Sarita Vihar",
+        "Mohan Estate",
+        "Tughlakabad",
+        "Badarpur Border",
+        "Sarai",
+        "N.H.P.C. Chowk",
+        "Mewala Maharajpur",
+        "Sector 28 Faridabad",
+        "Badkal Mor",
+        "Old Faridabad",
+        "Neelam Chowk Ajronda",
+        "Bata Chowk",
+        "Escorts Mujesar",
+        "Sant Surdas - Sihi",
+        "Raja Nahar Singh"
+      ],
+      "detailedStations": [
+        {
+          "station": "Kashmere Gate",
+          "distance": 0.0,
+          "nodeId": 148
+        },
+        {
+          "station": "Lal Quila",
+          "distance": 1.5,
+          "nodeId": 149
+        },
+        {
+          "station": "Jama Masjid",
+          "distance": 2.3,
+          "nodeId": 150
+        },
+        {
+          "station": "Delhi Gate",
+          "distance": 3.7,
+          "nodeId": 151
+        },
+        {
+          "station": "ITO",
+          "distance": 5.0,
+          "nodeId": 152
+        },
+        {
+          "station": "Mandi House",
+          "distance": 5.8,
+          "nodeId": 153
+        },
+        {
+          "station": "Janpath",
+          "distance": 7.2,
+          "nodeId": 154
+        },
+        {
+          "station": "Central Secretariat",
+          "distance": 8.5,
+          "nodeId": 155
+        },
+        {
+          "station": "Khan Market",
+          "distance": 10.6,
+          "nodeId": 156
+        },
+        {
+          "station": "Jawaharlal Nehru Stadium",
+          "distance": 12.0,
+          "nodeId": 157
+        },
+        {
+          "station": "Jangpura",
+          "distance": 12.9,
+          "nodeId": 158
+        },
+        {
+          "station": "Lajpat Nagar",
+          "distance": 14.4,
+          "nodeId": 159
+        },
+        {
+          "station": "Moolchand",
+          "distance": 15.1,
+          "nodeId": 160
+        },
+        {
+          "station": "Kailash Colony",
+          "distance": 16.4,
+          "nodeId": 161
+        },
+        {
+          "station": "Nehru Place",
+          "distance": 17.4,
+          "nodeId": 162
+        },
+        {
+          "station": "Kalkaji Mandir",
+          "distance": 18.2,
+          "nodeId": 163
+        },
+        {
+          "station": "Govind Puri",
+          "distance": 18.9,
+          "nodeId": 164
+        },
+        {
+          "station": "Okhla",
+          "distance": 20.0,
+          "nodeId": 165
+        },
+        {
+          "station": "Jasola",
+          "distance": 20.9,
+          "nodeId": 166
+        },
+        {
+          "station": "Sarita Vihar",
+          "distance": 22.1,
+          "nodeId": 167
+        },
+        {
+          "station": "Mohan Estate",
+          "distance": 23.3,
+          "nodeId": 168
+        },
+        {
+          "station": "Tughlakabad",
+          "distance": 25.2,
+          "nodeId": 169
+        },
+        {
+          "station": "Badarpur Border",
+          "distance": 26.3,
+          "nodeId": 170
+        },
+        {
+          "station": "Sarai",
+          "distance": 28.8,
+          "nodeId": 171
+        },
+        {
+          "station": "N.H.P.C. Chowk",
+          "distance": 30.4,
+          "nodeId": 172
+        },
+        {
+          "station": "Mewala Maharajpur",
+          "distance": 31.3,
+          "nodeId": 173
+        },
+        {
+          "station": "Sector 28 Faridabad",
+          "distance": 32.5,
+          "nodeId": 174
+        },
+        {
+          "station": "Badkal Mor",
+          "distance": 34.2,
+          "nodeId": 175
+        },
+        {
+          "station": "Old Faridabad",
+          "distance": 35.4,
+          "nodeId": 176
+        },
+        {
+          "station": "Neelam Chowk Ajronda",
+          "distance": 37.0,
+          "nodeId": 177
+        },
+        {
+          "station": "Bata Chowk",
+          "distance": 38.3,
+          "nodeId": 178
+        },
+        {
+          "station": "Escorts Mujesar",
+          "distance": 40.1,
+          "nodeId": 179
+        },
+        {
+          "station": "Sant Surdas - Sihi",
+          "distance": 41.8,
+          "nodeId": 180
+        },
+        {
+          "station": "Raja Nahar Singh",
+          "distance": 43.5,
+          "nodeId": 181
+        }
+      ]
+    },
+    {
+      "id": "Pink",
+      "name": "Pink Line",
+      "color": "#FF69B4",
+      "textColor": "#111827",
+      "stations": [
+        "Majlis Park",
+        "Azadpur",
+        "Shalimar Bagh",
+        "Netaji Subash Place",
+        "Shakurpur",
+        "Punjabi Bagh West",
+        "ESI BASAI DARAPUR",
+        "Rajouri Garden",
+        "Maya Puri",
+        "Naraina Vihar",
+        "Delhi Cantt",
+        "Durgabai Deshmukh South Campus",
+        "Sir Vishweshwaraiah Moti Bagh",
+        "Bhikaji Cama Place",
+        "Sarojini Nagar",
+        "Dilli Haat INA",
+        "South Extension",
+        "Lajpat Nagar",
+        "Vinobapuri",
+        "Ashram",
+        "Sarai Kale Khan Hazrat Nizamuddin",
+        "Mayur Vihar Phase-1",
+        "Mayur Vihar Pocket I",
+        "Trilokpuri Sanjay Lake",
+        "Vinod Nagar East",
+        "Mandawali - West Vinod Nagar",
+        "IP Extension",
+        "Anand Vihar",
+        "Karkar Duma",
+        "Karkarduma Court",
+        "Krishna Nagar",
+        "East Azad Nagar",
+        "Welcome",
+        "Jaffrabad",
+        "Maujpur",
+        "Gokulpuri",
+        "Johri Enclave",
+        "Shiv Vihar"
+      ],
+      "detailedStations": [
+        {
+          "station": "Majlis Park",
+          "distance": 0.0,
+          "nodeId": 182
+        },
+        {
+          "station": "Azadpur",
+          "distance": 2.1,
+          "nodeId": 183
+        },
+        {
+          "station": "Shalimar Bagh",
+          "distance": 3.7,
+          "nodeId": 184
+        },
+        {
+          "station": "Netaji Subash Place",
+          "distance": 5.1,
+          "nodeId": 185
+        },
+        {
+          "station": "Shakurpur",
+          "distance": 6.3,
+          "nodeId": 186
+        },
+        {
+          "station": "Punjabi Bagh West",
+          "distance": 7.7,
+          "nodeId": 187
+        },
+        {
+          "station": "ESI BASAI DARAPUR",
+          "distance": 10.2,
+          "nodeId": 188
+        },
+        {
+          "station": "Rajouri Garden",
+          "distance": 11.3,
+          "nodeId": 189
+        },
+        {
+          "station": "Maya Puri",
+          "distance": 12.8,
+          "nodeId": 190
+        },
+        {
+          "station": "Naraina Vihar",
+          "distance": 14.3,
+          "nodeId": 191
+        },
+        {
+          "station": "Delhi Cantt",
+          "distance": 16.1,
+          "nodeId": 192
+        },
+        {
+          "station": "Durgabai Deshmukh South Campus",
+          "distance": 19.7,
+          "nodeId": 193
+        },
+        {
+          "station": "Sir Vishweshwaraiah Moti Bagh",
+          "distance": 21.0,
+          "nodeId": 194
+        },
+        {
+          "station": "Bhikaji Cama Place",
+          "distance": 22.6,
+          "nodeId": 195
+        },
+        {
+          "station": "Sarojini Nagar",
+          "distance": 23.8,
+          "nodeId": 196
+        },
+        {
+          "station": "Dilli Haat INA",
+          "distance": 24.9,
+          "nodeId": 197
+        },
+        {
+          "station": "South Extension",
+          "distance": 26.1,
+          "nodeId": 198
+        },
+        {
+          "station": "Lajpat Nagar",
+          "distance": 27.7,
+          "nodeId": 199
+        },
+        {
+          "station": "Vinobapuri",
+          "distance": 29.1,
+          "nodeId": 200
+        },
+        {
+          "station": "Ashram",
+          "distance": 30.3,
+          "nodeId": 201
+        },
+        {
+          "station": "Sarai Kale Khan Hazrat Nizamuddin",
+          "distance": 32.2,
+          "nodeId": 202
+        },
+        {
+          "station": "Mayur Vihar Phase-1",
+          "distance": 35.8,
+          "nodeId": 203
+        },
+        {
+          "station": "Mayur Vihar Pocket I",
+          "distance": 36.6,
+          "nodeId": 204
+        },
+        {
+          "station": "Trilokpuri Sanjay Lake",
+          "distance": 37.9,
+          "nodeId": 205
+        },
+        {
+          "station": "Vinod Nagar East",
+          "distance": 38.7,
+          "nodeId": 206
+        },
+        {
+          "station": "Mandawali - West Vinod Nagar",
+          "distance": 39.3,
+          "nodeId": 207
+        },
+        {
+          "station": "IP Extension",
+          "distance": 40.3,
+          "nodeId": 208
+        },
+        {
+          "station": "Anand Vihar",
+          "distance": 41.9,
+          "nodeId": 209
+        },
+        {
+          "station": "Karkar Duma",
+          "distance": 42.9,
+          "nodeId": 210
+        },
+        {
+          "station": "Karkarduma Court",
+          "distance": 44.0,
+          "nodeId": 211
+        },
+        {
+          "station": "Krishna Nagar",
+          "distance": 44.7,
+          "nodeId": 212
+        },
+        {
+          "station": "East Azad Nagar",
+          "distance": 45.7,
+          "nodeId": 213
+        },
+        {
+          "station": "Welcome",
+          "distance": 46.8,
+          "nodeId": 214
+        },
+        {
+          "station": "Jaffrabad",
+          "distance": 48.0,
+          "nodeId": 215
+        },
+        {
+          "station": "Maujpur",
+          "distance": 49.1,
+          "nodeId": 216
+        },
+        {
+          "station": "Gokulpuri",
+          "distance": 50.4,
+          "nodeId": 217
+        },
+        {
+          "station": "Johri Enclave",
+          "distance": 51.7,
+          "nodeId": 218
+        },
+        {
+          "station": "Shiv Vihar",
+          "distance": 52.6,
+          "nodeId": 219
+        }
+      ]
+    },
+    {
+      "id": "Magenta",
+      "name": "Magenta Line",
+      "color": "#D81B60",
+      "textColor": "#ffffff",
+      "stations": [
+        "Janak Puri West",
+        "Dabri Mor - Janakpuri South",
+        "Dashrath Puri",
+        "Palam",
+        "Sadar Bazaar Cantonment",
+        "Terminal 1 IGI Airport",
+        "Shankar Vihar",
+        "Vasant Vihar",
+        "Munirka",
+        "RK Puram",
+        "IIT Delhi",
+        "Hauz Khas",
+        "Panchsheel Park",
+        "Chirag Delhi",
+        "Greater Kailash",
+        "Nehru Enclave",
+        "Kalkaji Mandir",
+        "Okhla NSIC",
+        "Sukhdev Vihar",
+        "JAMIA MILLIA ISLAMIA",
+        "Okhla Vihar",
+        "Jasola Vihar Shaheen Bagh",
+        "Kalindi Kunj",
+        "Okhla Bird Sanctuary",
+        "Botanical Garden"
+      ],
+      "detailedStations": [
+        {
+          "station": "Janak Puri West",
+          "distance": 0.0,
+          "nodeId": 220
+        },
+        {
+          "station": "Dabri Mor - Janakpuri South",
+          "distance": 2.0,
+          "nodeId": 221
+        },
+        {
+          "station": "Dashrath Puri",
+          "distance": 3.1,
+          "nodeId": 222
+        },
+        {
+          "station": "Palam",
+          "distance": 4.6,
+          "nodeId": 223
+        },
+        {
+          "station": "Sadar Bazaar Cantonment",
+          "distance": 7.2,
+          "nodeId": 224
+        },
+        {
+          "station": "Terminal 1 IGI Airport",
+          "distance": 8.9,
+          "nodeId": 225
+        },
+        {
+          "station": "Shankar Vihar",
+          "distance": 10.7,
+          "nodeId": 226
+        },
+        {
+          "station": "Vasant Vihar",
+          "distance": 12.8,
+          "nodeId": 227
+        },
+        {
+          "station": "Munirka",
+          "distance": 14.0,
+          "nodeId": 228
+        },
+        {
+          "station": "RK Puram",
+          "distance": 15.4,
+          "nodeId": 229
+        },
+        {
+          "station": "IIT Delhi",
+          "distance": 16.3,
+          "nodeId": 230
+        },
+        {
+          "station": "Hauz Khas",
+          "distance": 17.5,
+          "nodeId": 231
+        },
+        {
+          "station": "Panchsheel Park",
+          "distance": 19.0,
+          "nodeId": 232
+        },
+        {
+          "station": "Chirag Delhi",
+          "distance": 19.9,
+          "nodeId": 233
+        },
+        {
+          "station": "Greater Kailash",
+          "distance": 20.8,
+          "nodeId": 234
+        },
+        {
+          "station": "Nehru Enclave",
+          "distance": 22.1,
+          "nodeId": 235
+        },
+        {
+          "station": "Kalkaji Mandir",
+          "distance": 23.0,
+          "nodeId": 236
+        },
+        {
+          "station": "Okhla NSIC",
+          "distance": 23.8,
+          "nodeId": 237
+        },
+        {
+          "station": "Sukhdev Vihar",
+          "distance": 24.9,
+          "nodeId": 238
+        },
+        {
+          "station": "JAMIA MILLIA ISLAMIA",
+          "distance": 26.1,
+          "nodeId": 239
+        },
+        {
+          "station": "Okhla Vihar",
+          "distance": 26.6,
+          "nodeId": 240
+        },
+        {
+          "station": "Jasola Vihar Shaheen Bagh",
+          "distance": 28.4,
+          "nodeId": 241
+        },
+        {
+          "station": "Kalindi Kunj",
+          "distance": 29.8,
+          "nodeId": 242
+        },
+        {
+          "station": "Okhla Bird Sanctuary",
+          "distance": 31.4,
+          "nodeId": 243
+        },
+        {
+          "station": "Botanical Garden",
+          "distance": 33.1,
+          "nodeId": 244
+        }
+      ]
+    },
+    {
+      "id": "Rapid Metro",
+      "name": "Rapid Metro (Gurugram)",
+      "color": "#00A88F",
+      "textColor": "#ffffff",
+      "stations": [
+        "Sector 55-66",
+        "Sector 54 Chowk",
+        "Sector 53-54",
+        "Sector 42-43",
+        "DLF Phase 1",
+        "Sikandarpur",
+        "DLF Phase 2",
+        "Belvedere Towers",
+        "Cyber City",
+        "Moulsari Avenue",
+        "DLF Phase 3"
+      ],
+      "detailedStations": [
+        {
+          "station": "Sector 55-66",
+          "distance": 0.0,
+          "nodeId": 245
+        },
+        {
+          "station": "Sector 54 Chowk",
+          "distance": 1.1,
+          "nodeId": 246
+        },
+        {
+          "station": "Sector 53-54",
+          "distance": 2.6,
+          "nodeId": 247
+        },
+        {
+          "station": "Sector 42-43",
+          "distance": 3.9,
+          "nodeId": 248
+        },
+        {
+          "station": "DLF Phase 1",
+          "distance": 5.5,
+          "nodeId": 249
+        },
+        {
+          "station": "Sikandarpur",
+          "distance": 6.6,
+          "nodeId": 250
+        },
+        {
+          "station": "DLF Phase 2",
+          "distance": 7.3,
+          "nodeId": 251
+        },
+        {
+          "station": "Belvedere Towers",
+          "distance": 8.0,
+          "nodeId": 252
+        },
+        {
+          "station": "Cyber City",
+          "distance": 8.6,
+          "nodeId": 253
+        },
+        {
+          "station": "Moulsari Avenue",
+          "distance": 9.2,
+          "nodeId": 254
+        },
+        {
+          "station": "DLF Phase 3",
+          "distance": 10.0,
+          "nodeId": 255
+        }
+      ]
+    },
+    {
+      "id": "Airport Express",
+      "name": "Airport Express (Orange)",
+      "color": "#FF8200",
+      "textColor": "#ffffff",
+      "stations": [
+        "New Delhi-Airport Express",
+        "Shivaji Stadium",
+        "Dhaula Kuan",
+        "Delhi Aerocity",
+        "IGI Airport",
+        "Dwarka Sector 21"
+      ],
+      "detailedStations": [
+        {
+          "station": "New Delhi-Airport Express",
+          "distance": 0.0,
+          "nodeId": 256
+        },
+        {
+          "station": "Shivaji Stadium",
+          "distance": 1.9,
+          "nodeId": 257
+        },
+        {
+          "station": "Dhaula Kuan",
+          "distance": 8.3,
+          "nodeId": 258
+        },
+        {
+          "station": "Delhi Aerocity",
+          "distance": 14.5,
+          "nodeId": 259
+        },
+        {
+          "station": "IGI Airport",
+          "distance": 17.9,
+          "nodeId": 260
+        },
+        {
+          "station": "Dwarka Sector 21",
+          "distance": 20.8,
+          "nodeId": 261
+        }
+      ]
+    },
+    {
+      "id": "Aqua",
+      "name": "Aqua Line (Noida)",
+      "color": "#00CED1",
+      "textColor": "#111827",
+      "stations": [
+        "Noida Sector 51",
+        "Noida Sector 50",
+        "Noida Sector 76",
+        "Noida Sector 101",
+        "Noida Sector 81",
+        "NSEZ Noida",
+        "Noida Sector 83",
+        "Noida Sector 137",
+        "Noida Sector 142",
+        "Noida Sector 143",
+        "Noida Sector 144",
+        "Noida Sector 145",
+        "Noida Sector 146",
+        "Noida Sector 147",
+        "Noida Sector 148",
+        "Knowledge Park II",
+        "Pari Chowk Greater Noida",
+        "Alpha 1 Greater Noida",
+        "Delta 1 Greater Noida",
+        "GNIDA Office",
+        "Depot Greater Noida"
+      ],
+      "detailedStations": [
+        {
+          "station": "Noida Sector 51",
+          "distance": 0.0,
+          "nodeId": 262
+        },
+        {
+          "station": "Noida Sector 50",
+          "distance": 1.3,
+          "nodeId": 263
+        },
+        {
+          "station": "Noida Sector 76",
+          "distance": 2.3,
+          "nodeId": 264
+        },
+        {
+          "station": "Noida Sector 101",
+          "distance": 3.4,
+          "nodeId": 265
+        },
+        {
+          "station": "Noida Sector 81",
+          "distance": 4.3,
+          "nodeId": 266
+        },
+        {
+          "station": "NSEZ Noida",
+          "distance": 6.3,
+          "nodeId": 267
+        },
+        {
+          "station": "Noida Sector 83",
+          "distance": 7.4,
+          "nodeId": 268
+        },
+        {
+          "station": "Noida Sector 137",
+          "distance": 8.9,
+          "nodeId": 269
+        },
+        {
+          "station": "Noida Sector 142",
+          "distance": 10.5,
+          "nodeId": 270
+        },
+        {
+          "station": "Noida Sector 143",
+          "distance": 11.5,
+          "nodeId": 271
+        },
+        {
+          "station": "Noida Sector 144",
+          "distance": 12.9,
+          "nodeId": 272
+        },
+        {
+          "station": "Noida Sector 145",
+          "distance": 14.1,
+          "nodeId": 273
+        },
+        {
+          "station": "Noida Sector 146",
+          "distance": 15.8,
+          "nodeId": 274
+        },
+        {
+          "station": "Noida Sector 147",
+          "distance": 17.3,
+          "nodeId": 275
+        },
+        {
+          "station": "Noida Sector 148",
+          "distance": 18.9,
+          "nodeId": 276
+        },
+        {
+          "station": "Knowledge Park II",
+          "distance": 21.4,
+          "nodeId": 277
+        },
+        {
+          "station": "Pari Chowk Greater Noida",
+          "distance": 22.5,
+          "nodeId": 278
+        },
+        {
+          "station": "Alpha 1 Greater Noida",
+          "distance": 23.4,
+          "nodeId": 279
+        },
+        {
+          "station": "Delta 1 Greater Noida",
+          "distance": 24.9,
+          "nodeId": 280
+        },
+        {
+          "station": "GNIDA Office",
+          "distance": 26.2,
+          "nodeId": 281
+        },
+        {
+          "station": "Depot Greater Noida",
+          "distance": 27.1,
+          "nodeId": 282
+        }
+      ]
+    },
+    {
+      "id": "Grey",
+      "name": "Grey Line",
+      "color": "#808080",
+      "textColor": "#ffffff",
+      "stations": [
+        "Dwarka",
+        "Nangli",
+        "Najafgarh",
+        "Dhansa Bus Stand"
+      ],
+      "detailedStations": [
+        {
+          "station": "Dwarka",
+          "distance": 0.0,
+          "nodeId": 283
+        },
+        {
+          "station": "Nangli",
+          "distance": 1.0,
+          "nodeId": 284
+        },
+        {
+          "station": "Najafgarh",
+          "distance": 2.0,
+          "nodeId": 285
+        },
+        {
+          "station": "Dhansa Bus Stand",
+          "distance": 3.0,
+          "nodeId": 286
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": 0,
+      "station": "Dwarka Sector 21",
+      "line": "Blue"
+    },
+    {
+      "id": 1,
+      "station": "Dwarka Sector 8",
+      "line": "Blue"
+    },
+    {
+      "id": 2,
+      "station": "Dwarka Sector 9",
+      "line": "Blue"
+    },
+    {
+      "id": 3,
+      "station": "Dwarka Sector 10",
+      "line": "Blue"
+    },
+    {
+      "id": 4,
+      "station": "Dwarka Sector 11",
+      "line": "Blue"
+    },
+    {
+      "id": 5,
+      "station": "Dwarka Sector 12",
+      "line": "Blue"
+    },
+    {
+      "id": 6,
+      "station": "Dwarka Sector 13",
+      "line": "Blue"
+    },
+    {
+      "id": 7,
+      "station": "Dwarka Sector 14",
+      "line": "Blue"
+    },
+    {
+      "id": 8,
+      "station": "Dwarka",
+      "line": "Blue"
+    },
+    {
+      "id": 9,
+      "station": "Dwarka Mor",
+      "line": "Blue"
+    },
+    {
+      "id": 10,
+      "station": "Nawada",
+      "line": "Blue"
+    },
+    {
+      "id": 11,
+      "station": "Uttam Nagar West",
+      "line": "Blue"
+    },
+    {
+      "id": 12,
+      "station": "Uttam Nagar East",
+      "line": "Blue"
+    },
+    {
+      "id": 13,
+      "station": "Janak Puri West",
+      "line": "Blue"
+    },
+    {
+      "id": 14,
+      "station": "Janak Puri East",
+      "line": "Blue"
+    },
+    {
+      "id": 15,
+      "station": "Tilak Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 16,
+      "station": "Subhash Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 17,
+      "station": "Tagore Garden",
+      "line": "Blue"
+    },
+    {
+      "id": 18,
+      "station": "Rajouri Garden",
+      "line": "Blue"
+    },
+    {
+      "id": 19,
+      "station": "Ramesh Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 20,
+      "station": "Moti Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 21,
+      "station": "Kirti Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 22,
+      "station": "Shadipur",
+      "line": "Blue"
+    },
+    {
+      "id": 23,
+      "station": "Patel Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 24,
+      "station": "Rajendra Place",
+      "line": "Blue"
+    },
+    {
+      "id": 25,
+      "station": "Karol Bagh",
+      "line": "Blue"
+    },
+    {
+      "id": 26,
+      "station": "Jhandewalan",
+      "line": "Blue"
+    },
+    {
+      "id": 27,
+      "station": "R K Ashram Marg",
+      "line": "Blue"
+    },
+    {
+      "id": 28,
+      "station": "Rajiv Chowk",
+      "line": "Blue"
+    },
+    {
+      "id": 29,
+      "station": "Barakhamba",
+      "line": "Blue"
+    },
+    {
+      "id": 30,
+      "station": "Mandi House",
+      "line": "Blue"
+    },
+    {
+      "id": 31,
+      "station": "Supreme Court (Pragati Maidan)",
+      "line": "Blue"
+    },
+    {
+      "id": 32,
+      "station": "Indraprastha",
+      "line": "Blue"
+    },
+    {
+      "id": 33,
+      "station": "Yamuna Bank",
+      "line": "Blue"
+    },
+    {
+      "id": 34,
+      "station": "Akshardham",
+      "line": "Blue"
+    },
+    {
+      "id": 35,
+      "station": "Mayur Vihar Phase-1",
+      "line": "Blue"
+    },
+    {
+      "id": 36,
+      "station": "Mayur Vihar Extention",
+      "line": "Blue"
+    },
+    {
+      "id": 37,
+      "station": "New Ashok Nagar",
+      "line": "Blue"
+    },
+    {
+      "id": 38,
+      "station": "Noida Sector 15",
+      "line": "Blue"
+    },
+    {
+      "id": 39,
+      "station": "Noida Sector 16",
+      "line": "Blue"
+    },
+    {
+      "id": 40,
+      "station": "Noida Sector 18",
+      "line": "Blue"
+    },
+    {
+      "id": 41,
+      "station": "Botanical Garden",
+      "line": "Blue"
+    },
+    {
+      "id": 42,
+      "station": "Golf Course",
+      "line": "Blue"
+    },
+    {
+      "id": 43,
+      "station": "Noida City Center",
+      "line": "Blue"
+    },
+    {
+      "id": 44,
+      "station": "Noida Sector 34",
+      "line": "Blue"
+    },
+    {
+      "id": 45,
+      "station": "Noida Sector 52",
+      "line": "Blue"
+    },
+    {
+      "id": 46,
+      "station": "Noida Sector 61",
+      "line": "Blue"
+    },
+    {
+      "id": 47,
+      "station": "Noida Sector 59",
+      "line": "Blue"
+    },
+    {
+      "id": 48,
+      "station": "Noida Sector 62",
+      "line": "Blue"
+    },
+    {
+      "id": 49,
+      "station": "Noida Electronic City",
+      "line": "Blue"
+    },
+    {
+      "id": 50,
+      "station": "Yamuna Bank",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 51,
+      "station": "Laxmi Nagar",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 52,
+      "station": "Nirman Vihar",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 53,
+      "station": "Preet Vihar",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 54,
+      "station": "Karkar Duma",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 55,
+      "station": "Anand Vihar",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 56,
+      "station": "Kaushambi",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 57,
+      "station": "Vaishali",
+      "line": "Blue_Vaishali"
+    },
+    {
+      "id": 58,
+      "station": "Samaypur Badli",
+      "line": "Yellow"
+    },
+    {
+      "id": 59,
+      "station": "Rohini Sector 18-19",
+      "line": "Yellow"
+    },
+    {
+      "id": 60,
+      "station": "Haiderpur Badli Mor",
+      "line": "Yellow"
+    },
+    {
+      "id": 61,
+      "station": "Jahangirpuri",
+      "line": "Yellow"
+    },
+    {
+      "id": 62,
+      "station": "Adarsh Nagar",
+      "line": "Yellow"
+    },
+    {
+      "id": 63,
+      "station": "Azadpur",
+      "line": "Yellow"
+    },
+    {
+      "id": 64,
+      "station": "Model Town",
+      "line": "Yellow"
+    },
+    {
+      "id": 65,
+      "station": "Guru Tegh Bahadur Nagar",
+      "line": "Yellow"
+    },
+    {
+      "id": 66,
+      "station": "Vishwavidyalaya",
+      "line": "Yellow"
+    },
+    {
+      "id": 67,
+      "station": "Vidhan Sabha",
+      "line": "Yellow"
+    },
+    {
+      "id": 68,
+      "station": "Civil Lines",
+      "line": "Yellow"
+    },
+    {
+      "id": 69,
+      "station": "Kashmere Gate",
+      "line": "Yellow"
+    },
+    {
+      "id": 70,
+      "station": "Chandni Chowk",
+      "line": "Yellow"
+    },
+    {
+      "id": 71,
+      "station": "Chawri Bazar",
+      "line": "Yellow"
+    },
+    {
+      "id": 72,
+      "station": "New Delhi",
+      "line": "Yellow"
+    },
+    {
+      "id": 73,
+      "station": "Rajiv Chowk",
+      "line": "Yellow"
+    },
+    {
+      "id": 74,
+      "station": "Patel Chowk",
+      "line": "Yellow"
+    },
+    {
+      "id": 75,
+      "station": "Central Secretariat",
+      "line": "Yellow"
+    },
+    {
+      "id": 76,
+      "station": "Udyog Bhawan",
+      "line": "Yellow"
+    },
+    {
+      "id": 77,
+      "station": "Lok Kalyan Marg",
+      "line": "Yellow"
+    },
+    {
+      "id": 78,
+      "station": "Jorbagh",
+      "line": "Yellow"
+    },
+    {
+      "id": 79,
+      "station": "Dilli Haat INA",
+      "line": "Yellow"
+    },
+    {
+      "id": 80,
+      "station": "AIIMS",
+      "line": "Yellow"
+    },
+    {
+      "id": 81,
+      "station": "Green Park",
+      "line": "Yellow"
+    },
+    {
+      "id": 82,
+      "station": "Hauz Khas",
+      "line": "Yellow"
+    },
+    {
+      "id": 83,
+      "station": "Malviya Nagar",
+      "line": "Yellow"
+    },
+    {
+      "id": 84,
+      "station": "Saket",
+      "line": "Yellow"
+    },
+    {
+      "id": 85,
+      "station": "Qutab Minar",
+      "line": "Yellow"
+    },
+    {
+      "id": 86,
+      "station": "Chhattarpur",
+      "line": "Yellow"
+    },
+    {
+      "id": 87,
+      "station": "Sultanpur",
+      "line": "Yellow"
+    },
+    {
+      "id": 88,
+      "station": "Ghitorni",
+      "line": "Yellow"
+    },
+    {
+      "id": 89,
+      "station": "Arjan Garh",
+      "line": "Yellow"
+    },
+    {
+      "id": 90,
+      "station": "Guru Dronacharya",
+      "line": "Yellow"
+    },
+    {
+      "id": 91,
+      "station": "Sikandarpur",
+      "line": "Yellow"
+    },
+    {
+      "id": 92,
+      "station": "MG Road",
+      "line": "Yellow"
+    },
+    {
+      "id": 93,
+      "station": "IFFCO Chowk",
+      "line": "Yellow"
+    },
+    {
+      "id": 94,
+      "station": "Huda City Centre",
+      "line": "Yellow"
+    },
+    {
+      "id": 95,
+      "station": "Shaheed Sthal (New Bus Adda)",
+      "line": "Red"
+    },
+    {
+      "id": 96,
+      "station": "Hindon River",
+      "line": "Red"
+    },
+    {
+      "id": 97,
+      "station": "Arthala",
+      "line": "Red"
+    },
+    {
+      "id": 98,
+      "station": "Mohan Nagar",
+      "line": "Red"
+    },
+    {
+      "id": 99,
+      "station": "Shyam Park",
+      "line": "Red"
+    },
+    {
+      "id": 100,
+      "station": "Major Mohit Sharma",
+      "line": "Red"
+    },
+    {
+      "id": 101,
+      "station": "Raj Bagh",
+      "line": "Red"
+    },
+    {
+      "id": 102,
+      "station": "Shaheed Nagar",
+      "line": "Red"
+    },
+    {
+      "id": 103,
+      "station": "Dilshad Garden",
+      "line": "Red"
+    },
+    {
+      "id": 104,
+      "station": "Jhil Mil",
+      "line": "Red"
+    },
+    {
+      "id": 105,
+      "station": "Mansarovar Park",
+      "line": "Red"
+    },
+    {
+      "id": 106,
+      "station": "Shahdara",
+      "line": "Red"
+    },
+    {
+      "id": 107,
+      "station": "Welcome",
+      "line": "Red"
+    },
+    {
+      "id": 108,
+      "station": "Seelampur",
+      "line": "Red"
+    },
+    {
+      "id": 109,
+      "station": "Shastri Park",
+      "line": "Red"
+    },
+    {
+      "id": 110,
+      "station": "Kashmere Gate",
+      "line": "Red"
+    },
+    {
+      "id": 111,
+      "station": "Tis Hazari",
+      "line": "Red"
+    },
+    {
+      "id": 112,
+      "station": "Pul Bangash",
+      "line": "Red"
+    },
+    {
+      "id": 113,
+      "station": "Pratap Nagar",
+      "line": "Red"
+    },
+    {
+      "id": 114,
+      "station": "Shastri Nagar",
+      "line": "Red"
+    },
+    {
+      "id": 115,
+      "station": "Inderlok",
+      "line": "Red"
+    },
+    {
+      "id": 116,
+      "station": "Kanhaiya Nagar",
+      "line": "Red"
+    },
+    {
+      "id": 117,
+      "station": "Keshav Puram",
+      "line": "Red"
+    },
+    {
+      "id": 118,
+      "station": "Netaji Subash Place",
+      "line": "Red"
+    },
+    {
+      "id": 119,
+      "station": "Kohat Enclave",
+      "line": "Red"
+    },
+    {
+      "id": 120,
+      "station": "Pitam Pura",
+      "line": "Red"
+    },
+    {
+      "id": 121,
+      "station": "Rohini East",
+      "line": "Red"
+    },
+    {
+      "id": 122,
+      "station": "Rohini West",
+      "line": "Red"
+    },
+    {
+      "id": 123,
+      "station": "Rithala",
+      "line": "Red"
+    },
+    {
+      "id": 124,
+      "station": "Inderlok",
+      "line": "Green"
+    },
+    {
+      "id": 125,
+      "station": "Ashok Park Main",
+      "line": "Green"
+    },
+    {
+      "id": 126,
+      "station": "Punjabi Bagh",
+      "line": "Green"
+    },
+    {
+      "id": 127,
+      "station": "Shivaji Park",
+      "line": "Green"
+    },
+    {
+      "id": 128,
+      "station": "Madipur",
+      "line": "Green"
+    },
+    {
+      "id": 129,
+      "station": "Paschim Vihar (East)",
+      "line": "Green"
+    },
+    {
+      "id": 130,
+      "station": "Paschim Vihar (West)",
+      "line": "Green"
+    },
+    {
+      "id": 131,
+      "station": "Peera Garhi",
+      "line": "Green"
+    },
+    {
+      "id": 132,
+      "station": "Udyog Nagar",
+      "line": "Green"
+    },
+    {
+      "id": 133,
+      "station": "Maharaja Surajmal Stadium",
+      "line": "Green"
+    },
+    {
+      "id": 134,
+      "station": "Nangloi",
+      "line": "Green"
+    },
+    {
+      "id": 135,
+      "station": "Nangloi Railway Station",
+      "line": "Green"
+    },
+    {
+      "id": 136,
+      "station": "Rajdhani Park",
+      "line": "Green"
+    },
+    {
+      "id": 137,
+      "station": "Mundka",
+      "line": "Green"
+    },
+    {
+      "id": 138,
+      "station": "Mundka Industrial Area (MIA)",
+      "line": "Green"
+    },
+    {
+      "id": 139,
+      "station": "Ghevra Metro Station",
+      "line": "Green"
+    },
+    {
+      "id": 140,
+      "station": "Tikri Kalan",
+      "line": "Green"
+    },
+    {
+      "id": 141,
+      "station": "Tikri Border",
+      "line": "Green"
+    },
+    {
+      "id": 142,
+      "station": "Pandit Shree Ram Sharma",
+      "line": "Green"
+    },
+    {
+      "id": 143,
+      "station": "Bahadurgarh City",
+      "line": "Green"
+    },
+    {
+      "id": 144,
+      "station": "Brigadier Hoshiar Singh",
+      "line": "Green"
+    },
+    {
+      "id": 145,
+      "station": "Ashok Park Main",
+      "line": "Green_Branch"
+    },
+    {
+      "id": 146,
+      "station": "Satguru Ram Singh Marg",
+      "line": "Green_Branch"
+    },
+    {
+      "id": 147,
+      "station": "Kirti Nagar",
+      "line": "Green_Branch"
+    },
+    {
+      "id": 148,
+      "station": "Kashmere Gate",
+      "line": "Violet"
+    },
+    {
+      "id": 149,
+      "station": "Lal Quila",
+      "line": "Violet"
+    },
+    {
+      "id": 150,
+      "station": "Jama Masjid",
+      "line": "Violet"
+    },
+    {
+      "id": 151,
+      "station": "Delhi Gate",
+      "line": "Violet"
+    },
+    {
+      "id": 152,
+      "station": "ITO",
+      "line": "Violet"
+    },
+    {
+      "id": 153,
+      "station": "Mandi House",
+      "line": "Violet"
+    },
+    {
+      "id": 154,
+      "station": "Janpath",
+      "line": "Violet"
+    },
+    {
+      "id": 155,
+      "station": "Central Secretariat",
+      "line": "Violet"
+    },
+    {
+      "id": 156,
+      "station": "Khan Market",
+      "line": "Violet"
+    },
+    {
+      "id": 157,
+      "station": "Jawaharlal Nehru Stadium",
+      "line": "Violet"
+    },
+    {
+      "id": 158,
+      "station": "Jangpura",
+      "line": "Violet"
+    },
+    {
+      "id": 159,
+      "station": "Lajpat Nagar",
+      "line": "Violet"
+    },
+    {
+      "id": 160,
+      "station": "Moolchand",
+      "line": "Violet"
+    },
+    {
+      "id": 161,
+      "station": "Kailash Colony",
+      "line": "Violet"
+    },
+    {
+      "id": 162,
+      "station": "Nehru Place",
+      "line": "Violet"
+    },
+    {
+      "id": 163,
+      "station": "Kalkaji Mandir",
+      "line": "Violet"
+    },
+    {
+      "id": 164,
+      "station": "Govind Puri",
+      "line": "Violet"
+    },
+    {
+      "id": 165,
+      "station": "Okhla",
+      "line": "Violet"
+    },
+    {
+      "id": 166,
+      "station": "Jasola",
+      "line": "Violet"
+    },
+    {
+      "id": 167,
+      "station": "Sarita Vihar",
+      "line": "Violet"
+    },
+    {
+      "id": 168,
+      "station": "Mohan Estate",
+      "line": "Violet"
+    },
+    {
+      "id": 169,
+      "station": "Tughlakabad",
+      "line": "Violet"
+    },
+    {
+      "id": 170,
+      "station": "Badarpur Border",
+      "line": "Violet"
+    },
+    {
+      "id": 171,
+      "station": "Sarai",
+      "line": "Violet"
+    },
+    {
+      "id": 172,
+      "station": "N.H.P.C. Chowk",
+      "line": "Violet"
+    },
+    {
+      "id": 173,
+      "station": "Mewala Maharajpur",
+      "line": "Violet"
+    },
+    {
+      "id": 174,
+      "station": "Sector 28 Faridabad",
+      "line": "Violet"
+    },
+    {
+      "id": 175,
+      "station": "Badkal Mor",
+      "line": "Violet"
+    },
+    {
+      "id": 176,
+      "station": "Old Faridabad",
+      "line": "Violet"
+    },
+    {
+      "id": 177,
+      "station": "Neelam Chowk Ajronda",
+      "line": "Violet"
+    },
+    {
+      "id": 178,
+      "station": "Bata Chowk",
+      "line": "Violet"
+    },
+    {
+      "id": 179,
+      "station": "Escorts Mujesar",
+      "line": "Violet"
+    },
+    {
+      "id": 180,
+      "station": "Sant Surdas - Sihi",
+      "line": "Violet"
+    },
+    {
+      "id": 181,
+      "station": "Raja Nahar Singh",
+      "line": "Violet"
+    },
+    {
+      "id": 182,
+      "station": "Majlis Park",
+      "line": "Pink"
+    },
+    {
+      "id": 183,
+      "station": "Azadpur",
+      "line": "Pink"
+    },
+    {
+      "id": 184,
+      "station": "Shalimar Bagh",
+      "line": "Pink"
+    },
+    {
+      "id": 185,
+      "station": "Netaji Subash Place",
+      "line": "Pink"
+    },
+    {
+      "id": 186,
+      "station": "Shakurpur",
+      "line": "Pink"
+    },
+    {
+      "id": 187,
+      "station": "Punjabi Bagh West",
+      "line": "Pink"
+    },
+    {
+      "id": 188,
+      "station": "ESI BASAI DARAPUR",
+      "line": "Pink"
+    },
+    {
+      "id": 189,
+      "station": "Rajouri Garden",
+      "line": "Pink"
+    },
+    {
+      "id": 190,
+      "station": "Maya Puri",
+      "line": "Pink"
+    },
+    {
+      "id": 191,
+      "station": "Naraina Vihar",
+      "line": "Pink"
+    },
+    {
+      "id": 192,
+      "station": "Delhi Cantt",
+      "line": "Pink"
+    },
+    {
+      "id": 193,
+      "station": "Durgabai Deshmukh South Campus",
+      "line": "Pink"
+    },
+    {
+      "id": 194,
+      "station": "Sir Vishweshwaraiah Moti Bagh",
+      "line": "Pink"
+    },
+    {
+      "id": 195,
+      "station": "Bhikaji Cama Place",
+      "line": "Pink"
+    },
+    {
+      "id": 196,
+      "station": "Sarojini Nagar",
+      "line": "Pink"
+    },
+    {
+      "id": 197,
+      "station": "Dilli Haat INA",
+      "line": "Pink"
+    },
+    {
+      "id": 198,
+      "station": "South Extension",
+      "line": "Pink"
+    },
+    {
+      "id": 199,
+      "station": "Lajpat Nagar",
+      "line": "Pink"
+    },
+    {
+      "id": 200,
+      "station": "Vinobapuri",
+      "line": "Pink"
+    },
+    {
+      "id": 201,
+      "station": "Ashram",
+      "line": "Pink"
+    },
+    {
+      "id": 202,
+      "station": "Sarai Kale Khan Hazrat Nizamuddin",
+      "line": "Pink"
+    },
+    {
+      "id": 203,
+      "station": "Mayur Vihar Phase-1",
+      "line": "Pink"
+    },
+    {
+      "id": 204,
+      "station": "Mayur Vihar Pocket I",
+      "line": "Pink"
+    },
+    {
+      "id": 205,
+      "station": "Trilokpuri Sanjay Lake",
+      "line": "Pink"
+    },
+    {
+      "id": 206,
+      "station": "Vinod Nagar East",
+      "line": "Pink"
+    },
+    {
+      "id": 207,
+      "station": "Mandawali - West Vinod Nagar",
+      "line": "Pink"
+    },
+    {
+      "id": 208,
+      "station": "IP Extension",
+      "line": "Pink"
+    },
+    {
+      "id": 209,
+      "station": "Anand Vihar",
+      "line": "Pink"
+    },
+    {
+      "id": 210,
+      "station": "Karkar Duma",
+      "line": "Pink"
+    },
+    {
+      "id": 211,
+      "station": "Karkarduma Court",
+      "line": "Pink"
+    },
+    {
+      "id": 212,
+      "station": "Krishna Nagar",
+      "line": "Pink"
+    },
+    {
+      "id": 213,
+      "station": "East Azad Nagar",
+      "line": "Pink"
+    },
+    {
+      "id": 214,
+      "station": "Welcome",
+      "line": "Pink"
+    },
+    {
+      "id": 215,
+      "station": "Jaffrabad",
+      "line": "Pink"
+    },
+    {
+      "id": 216,
+      "station": "Maujpur",
+      "line": "Pink"
+    },
+    {
+      "id": 217,
+      "station": "Gokulpuri",
+      "line": "Pink"
+    },
+    {
+      "id": 218,
+      "station": "Johri Enclave",
+      "line": "Pink"
+    },
+    {
+      "id": 219,
+      "station": "Shiv Vihar",
+      "line": "Pink"
+    },
+    {
+      "id": 220,
+      "station": "Janak Puri West",
+      "line": "Magenta"
+    },
+    {
+      "id": 221,
+      "station": "Dabri Mor - Janakpuri South",
+      "line": "Magenta"
+    },
+    {
+      "id": 222,
+      "station": "Dashrath Puri",
+      "line": "Magenta"
+    },
+    {
+      "id": 223,
+      "station": "Palam",
+      "line": "Magenta"
+    },
+    {
+      "id": 224,
+      "station": "Sadar Bazaar Cantonment",
+      "line": "Magenta"
+    },
+    {
+      "id": 225,
+      "station": "Terminal 1 IGI Airport",
+      "line": "Magenta"
+    },
+    {
+      "id": 226,
+      "station": "Shankar Vihar",
+      "line": "Magenta"
+    },
+    {
+      "id": 227,
+      "station": "Vasant Vihar",
+      "line": "Magenta"
+    },
+    {
+      "id": 228,
+      "station": "Munirka",
+      "line": "Magenta"
+    },
+    {
+      "id": 229,
+      "station": "RK Puram",
+      "line": "Magenta"
+    },
+    {
+      "id": 230,
+      "station": "IIT Delhi",
+      "line": "Magenta"
+    },
+    {
+      "id": 231,
+      "station": "Hauz Khas",
+      "line": "Magenta"
+    },
+    {
+      "id": 232,
+      "station": "Panchsheel Park",
+      "line": "Magenta"
+    },
+    {
+      "id": 233,
+      "station": "Chirag Delhi",
+      "line": "Magenta"
+    },
+    {
+      "id": 234,
+      "station": "Greater Kailash",
+      "line": "Magenta"
+    },
+    {
+      "id": 235,
+      "station": "Nehru Enclave",
+      "line": "Magenta"
+    },
+    {
+      "id": 236,
+      "station": "Kalkaji Mandir",
+      "line": "Magenta"
+    },
+    {
+      "id": 237,
+      "station": "Okhla NSIC",
+      "line": "Magenta"
+    },
+    {
+      "id": 238,
+      "station": "Sukhdev Vihar",
+      "line": "Magenta"
+    },
+    {
+      "id": 239,
+      "station": "JAMIA MILLIA ISLAMIA",
+      "line": "Magenta"
+    },
+    {
+      "id": 240,
+      "station": "Okhla Vihar",
+      "line": "Magenta"
+    },
+    {
+      "id": 241,
+      "station": "Jasola Vihar Shaheen Bagh",
+      "line": "Magenta"
+    },
+    {
+      "id": 242,
+      "station": "Kalindi Kunj",
+      "line": "Magenta"
+    },
+    {
+      "id": 243,
+      "station": "Okhla Bird Sanctuary",
+      "line": "Magenta"
+    },
+    {
+      "id": 244,
+      "station": "Botanical Garden",
+      "line": "Magenta"
+    },
+    {
+      "id": 245,
+      "station": "Sector 55-66",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 246,
+      "station": "Sector 54 Chowk",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 247,
+      "station": "Sector 53-54",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 248,
+      "station": "Sector 42-43",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 249,
+      "station": "DLF Phase 1",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 250,
+      "station": "Sikandarpur",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 251,
+      "station": "DLF Phase 2",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 252,
+      "station": "Belvedere Towers",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 253,
+      "station": "Cyber City",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 254,
+      "station": "Moulsari Avenue",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 255,
+      "station": "DLF Phase 3",
+      "line": "Rapid Metro"
+    },
+    {
+      "id": 256,
+      "station": "New Delhi-Airport Express",
+      "line": "Airport Express"
+    },
+    {
+      "id": 257,
+      "station": "Shivaji Stadium",
+      "line": "Airport Express"
+    },
+    {
+      "id": 258,
+      "station": "Dhaula Kuan",
+      "line": "Airport Express"
+    },
+    {
+      "id": 259,
+      "station": "Delhi Aerocity",
+      "line": "Airport Express"
+    },
+    {
+      "id": 260,
+      "station": "IGI Airport",
+      "line": "Airport Express"
+    },
+    {
+      "id": 261,
+      "station": "Dwarka Sector 21",
+      "line": "Airport Express"
+    },
+    {
+      "id": 262,
+      "station": "Noida Sector 51",
+      "line": "Aqua"
+    },
+    {
+      "id": 263,
+      "station": "Noida Sector 50",
+      "line": "Aqua"
+    },
+    {
+      "id": 264,
+      "station": "Noida Sector 76",
+      "line": "Aqua"
+    },
+    {
+      "id": 265,
+      "station": "Noida Sector 101",
+      "line": "Aqua"
+    },
+    {
+      "id": 266,
+      "station": "Noida Sector 81",
+      "line": "Aqua"
+    },
+    {
+      "id": 267,
+      "station": "NSEZ Noida",
+      "line": "Aqua"
+    },
+    {
+      "id": 268,
+      "station": "Noida Sector 83",
+      "line": "Aqua"
+    },
+    {
+      "id": 269,
+      "station": "Noida Sector 137",
+      "line": "Aqua"
+    },
+    {
+      "id": 270,
+      "station": "Noida Sector 142",
+      "line": "Aqua"
+    },
+    {
+      "id": 271,
+      "station": "Noida Sector 143",
+      "line": "Aqua"
+    },
+    {
+      "id": 272,
+      "station": "Noida Sector 144",
+      "line": "Aqua"
+    },
+    {
+      "id": 273,
+      "station": "Noida Sector 145",
+      "line": "Aqua"
+    },
+    {
+      "id": 274,
+      "station": "Noida Sector 146",
+      "line": "Aqua"
+    },
+    {
+      "id": 275,
+      "station": "Noida Sector 147",
+      "line": "Aqua"
+    },
+    {
+      "id": 276,
+      "station": "Noida Sector 148",
+      "line": "Aqua"
+    },
+    {
+      "id": 277,
+      "station": "Knowledge Park II",
+      "line": "Aqua"
+    },
+    {
+      "id": 278,
+      "station": "Pari Chowk Greater Noida",
+      "line": "Aqua"
+    },
+    {
+      "id": 279,
+      "station": "Alpha 1 Greater Noida",
+      "line": "Aqua"
+    },
+    {
+      "id": 280,
+      "station": "Delta 1 Greater Noida",
+      "line": "Aqua"
+    },
+    {
+      "id": 281,
+      "station": "GNIDA Office",
+      "line": "Aqua"
+    },
+    {
+      "id": 282,
+      "station": "Depot Greater Noida",
+      "line": "Aqua"
+    },
+    {
+      "id": 283,
+      "station": "Dwarka",
+      "line": "Grey"
+    },
+    {
+      "id": 284,
+      "station": "Nangli",
+      "line": "Grey"
+    },
+    {
+      "id": 285,
+      "station": "Najafgarh",
+      "line": "Grey"
+    },
+    {
+      "id": 286,
+      "station": "Dhansa Bus Stand",
+      "line": "Grey"
+    }
+  ],
+  "stationToNodes": {
+    "Dwarka Sector 21": [
+      0,
+      261
+    ],
+    "Dwarka Sector 8": [
+      1
+    ],
+    "Dwarka Sector 9": [
+      2
+    ],
+    "Dwarka Sector 10": [
+      3
+    ],
+    "Dwarka Sector 11": [
+      4
+    ],
+    "Dwarka Sector 12": [
+      5
+    ],
+    "Dwarka Sector 13": [
+      6
+    ],
+    "Dwarka Sector 14": [
+      7
+    ],
+    "Dwarka": [
+      8,
+      283
+    ],
+    "Dwarka Mor": [
+      9
+    ],
+    "Nawada": [
+      10
+    ],
+    "Uttam Nagar West": [
+      11
+    ],
+    "Uttam Nagar East": [
+      12
+    ],
+    "Janak Puri West": [
+      13,
+      220
+    ],
+    "Janak Puri East": [
+      14
+    ],
+    "Tilak Nagar": [
+      15
+    ],
+    "Subhash Nagar": [
+      16
+    ],
+    "Tagore Garden": [
+      17
+    ],
+    "Rajouri Garden": [
+      18,
+      189
+    ],
+    "Ramesh Nagar": [
+      19
+    ],
+    "Moti Nagar": [
+      20
+    ],
+    "Kirti Nagar": [
+      21,
+      147
+    ],
+    "Shadipur": [
+      22
+    ],
+    "Patel Nagar": [
+      23
+    ],
+    "Rajendra Place": [
+      24
+    ],
+    "Karol Bagh": [
+      25
+    ],
+    "Jhandewalan": [
+      26
+    ],
+    "R K Ashram Marg": [
+      27
+    ],
+    "Rajiv Chowk": [
+      28,
+      73
+    ],
+    "Barakhamba": [
+      29
+    ],
+    "Mandi House": [
+      30,
+      153
+    ],
+    "Supreme Court (Pragati Maidan)": [
+      31
+    ],
+    "Indraprastha": [
+      32
+    ],
+    "Yamuna Bank": [
+      33,
+      50
+    ],
+    "Akshardham": [
+      34
+    ],
+    "Mayur Vihar Phase-1": [
+      35,
+      203
+    ],
+    "Mayur Vihar Extention": [
+      36
+    ],
+    "New Ashok Nagar": [
+      37
+    ],
+    "Noida Sector 15": [
+      38
+    ],
+    "Noida Sector 16": [
+      39
+    ],
+    "Noida Sector 18": [
+      40
+    ],
+    "Botanical Garden": [
+      41,
+      244
+    ],
+    "Golf Course": [
+      42
+    ],
+    "Noida City Center": [
+      43
+    ],
+    "Noida Sector 34": [
+      44
+    ],
+    "Noida Sector 52": [
+      45
+    ],
+    "Noida Sector 61": [
+      46
+    ],
+    "Noida Sector 59": [
+      47
+    ],
+    "Noida Sector 62": [
+      48
+    ],
+    "Noida Electronic City": [
+      49
+    ],
+    "Laxmi Nagar": [
+      51
+    ],
+    "Nirman Vihar": [
+      52
+    ],
+    "Preet Vihar": [
+      53
+    ],
+    "Karkar Duma": [
+      54,
+      210
+    ],
+    "Anand Vihar": [
+      55,
+      209
+    ],
+    "Kaushambi": [
+      56
+    ],
+    "Vaishali": [
+      57
+    ],
+    "Samaypur Badli": [
+      58
+    ],
+    "Rohini Sector 18-19": [
+      59
+    ],
+    "Haiderpur Badli Mor": [
+      60
+    ],
+    "Jahangirpuri": [
+      61
+    ],
+    "Adarsh Nagar": [
+      62
+    ],
+    "Azadpur": [
+      63,
+      183
+    ],
+    "Model Town": [
+      64
+    ],
+    "Guru Tegh Bahadur Nagar": [
+      65
+    ],
+    "Vishwavidyalaya": [
+      66
+    ],
+    "Vidhan Sabha": [
+      67
+    ],
+    "Civil Lines": [
+      68
+    ],
+    "Kashmere Gate": [
+      69,
+      110,
+      148
+    ],
+    "Chandni Chowk": [
+      70
+    ],
+    "Chawri Bazar": [
+      71
+    ],
+    "New Delhi": [
+      72
+    ],
+    "Patel Chowk": [
+      74
+    ],
+    "Central Secretariat": [
+      75,
+      155
+    ],
+    "Udyog Bhawan": [
+      76
+    ],
+    "Lok Kalyan Marg": [
+      77
+    ],
+    "Jorbagh": [
+      78
+    ],
+    "Dilli Haat INA": [
+      79,
+      197
+    ],
+    "AIIMS": [
+      80
+    ],
+    "Green Park": [
+      81
+    ],
+    "Hauz Khas": [
+      82,
+      231
+    ],
+    "Malviya Nagar": [
+      83
+    ],
+    "Saket": [
+      84
+    ],
+    "Qutab Minar": [
+      85
+    ],
+    "Chhattarpur": [
+      86
+    ],
+    "Sultanpur": [
+      87
+    ],
+    "Ghitorni": [
+      88
+    ],
+    "Arjan Garh": [
+      89
+    ],
+    "Guru Dronacharya": [
+      90
+    ],
+    "Sikandarpur": [
+      91,
+      250
+    ],
+    "MG Road": [
+      92
+    ],
+    "IFFCO Chowk": [
+      93
+    ],
+    "Huda City Centre": [
+      94
+    ],
+    "Shaheed Sthal (New Bus Adda)": [
+      95
+    ],
+    "Hindon River": [
+      96
+    ],
+    "Arthala": [
+      97
+    ],
+    "Mohan Nagar": [
+      98
+    ],
+    "Shyam Park": [
+      99
+    ],
+    "Major Mohit Sharma": [
+      100
+    ],
+    "Raj Bagh": [
+      101
+    ],
+    "Shaheed Nagar": [
+      102
+    ],
+    "Dilshad Garden": [
+      103
+    ],
+    "Jhil Mil": [
+      104
+    ],
+    "Mansarovar Park": [
+      105
+    ],
+    "Shahdara": [
+      106
+    ],
+    "Welcome": [
+      107,
+      214
+    ],
+    "Seelampur": [
+      108
+    ],
+    "Shastri Park": [
+      109
+    ],
+    "Tis Hazari": [
+      111
+    ],
+    "Pul Bangash": [
+      112
+    ],
+    "Pratap Nagar": [
+      113
+    ],
+    "Shastri Nagar": [
+      114
+    ],
+    "Inderlok": [
+      115,
+      124
+    ],
+    "Kanhaiya Nagar": [
+      116
+    ],
+    "Keshav Puram": [
+      117
+    ],
+    "Netaji Subash Place": [
+      118,
+      185
+    ],
+    "Kohat Enclave": [
+      119
+    ],
+    "Pitam Pura": [
+      120
+    ],
+    "Rohini East": [
+      121
+    ],
+    "Rohini West": [
+      122
+    ],
+    "Rithala": [
+      123
+    ],
+    "Ashok Park Main": [
+      125,
+      145
+    ],
+    "Punjabi Bagh": [
+      126
+    ],
+    "Shivaji Park": [
+      127
+    ],
+    "Madipur": [
+      128
+    ],
+    "Paschim Vihar (East)": [
+      129
+    ],
+    "Paschim Vihar (West)": [
+      130
+    ],
+    "Peera Garhi": [
+      131
+    ],
+    "Udyog Nagar": [
+      132
+    ],
+    "Maharaja Surajmal Stadium": [
+      133
+    ],
+    "Nangloi": [
+      134
+    ],
+    "Nangloi Railway Station": [
+      135
+    ],
+    "Rajdhani Park": [
+      136
+    ],
+    "Mundka": [
+      137
+    ],
+    "Mundka Industrial Area (MIA)": [
+      138
+    ],
+    "Ghevra Metro Station": [
+      139
+    ],
+    "Tikri Kalan": [
+      140
+    ],
+    "Tikri Border": [
+      141
+    ],
+    "Pandit Shree Ram Sharma": [
+      142
+    ],
+    "Bahadurgarh City": [
+      143
+    ],
+    "Brigadier Hoshiar Singh": [
+      144
+    ],
+    "Satguru Ram Singh Marg": [
+      146
+    ],
+    "Lal Quila": [
+      149
+    ],
+    "Jama Masjid": [
+      150
+    ],
+    "Delhi Gate": [
+      151
+    ],
+    "ITO": [
+      152
+    ],
+    "Janpath": [
+      154
+    ],
+    "Khan Market": [
+      156
+    ],
+    "Jawaharlal Nehru Stadium": [
+      157
+    ],
+    "Jangpura": [
+      158
+    ],
+    "Lajpat Nagar": [
+      159,
+      199
+    ],
+    "Moolchand": [
+      160
+    ],
+    "Kailash Colony": [
+      161
+    ],
+    "Nehru Place": [
+      162
+    ],
+    "Kalkaji Mandir": [
+      163,
+      236
+    ],
+    "Govind Puri": [
+      164
+    ],
+    "Okhla": [
+      165
+    ],
+    "Jasola": [
+      166
+    ],
+    "Sarita Vihar": [
+      167
+    ],
+    "Mohan Estate": [
+      168
+    ],
+    "Tughlakabad": [
+      169
+    ],
+    "Badarpur Border": [
+      170
+    ],
+    "Sarai": [
+      171
+    ],
+    "N.H.P.C. Chowk": [
+      172
+    ],
+    "Mewala Maharajpur": [
+      173
+    ],
+    "Sector 28 Faridabad": [
+      174
+    ],
+    "Badkal Mor": [
+      175
+    ],
+    "Old Faridabad": [
+      176
+    ],
+    "Neelam Chowk Ajronda": [
+      177
+    ],
+    "Bata Chowk": [
+      178
+    ],
+    "Escorts Mujesar": [
+      179
+    ],
+    "Sant Surdas - Sihi": [
+      180
+    ],
+    "Raja Nahar Singh": [
+      181
+    ],
+    "Majlis Park": [
+      182
+    ],
+    "Shalimar Bagh": [
+      184
+    ],
+    "Shakurpur": [
+      186
+    ],
+    "Punjabi Bagh West": [
+      187
+    ],
+    "ESI BASAI DARAPUR": [
+      188
+    ],
+    "Maya Puri": [
+      190
+    ],
+    "Naraina Vihar": [
+      191
+    ],
+    "Delhi Cantt": [
+      192
+    ],
+    "Durgabai Deshmukh South Campus": [
+      193
+    ],
+    "Sir Vishweshwaraiah Moti Bagh": [
+      194
+    ],
+    "Bhikaji Cama Place": [
+      195
+    ],
+    "Sarojini Nagar": [
+      196
+    ],
+    "South Extension": [
+      198
+    ],
+    "Vinobapuri": [
+      200
+    ],
+    "Ashram": [
+      201
+    ],
+    "Sarai Kale Khan Hazrat Nizamuddin": [
+      202
+    ],
+    "Mayur Vihar Pocket I": [
+      204
+    ],
+    "Trilokpuri Sanjay Lake": [
+      205
+    ],
+    "Vinod Nagar East": [
+      206
+    ],
+    "Mandawali - West Vinod Nagar": [
+      207
+    ],
+    "IP Extension": [
+      208
+    ],
+    "Karkarduma Court": [
+      211
+    ],
+    "Krishna Nagar": [
+      212
+    ],
+    "East Azad Nagar": [
+      213
+    ],
+    "Jaffrabad": [
+      215
+    ],
+    "Maujpur": [
+      216
+    ],
+    "Gokulpuri": [
+      217
+    ],
+    "Johri Enclave": [
+      218
+    ],
+    "Shiv Vihar": [
+      219
+    ],
+    "Dabri Mor - Janakpuri South": [
+      221
+    ],
+    "Dashrath Puri": [
+      222
+    ],
+    "Palam": [
+      223
+    ],
+    "Sadar Bazaar Cantonment": [
+      224
+    ],
+    "Terminal 1 IGI Airport": [
+      225
+    ],
+    "Shankar Vihar": [
+      226
+    ],
+    "Vasant Vihar": [
+      227
+    ],
+    "Munirka": [
+      228
+    ],
+    "RK Puram": [
+      229
+    ],
+    "IIT Delhi": [
+      230
+    ],
+    "Panchsheel Park": [
+      232
+    ],
+    "Chirag Delhi": [
+      233
+    ],
+    "Greater Kailash": [
+      234
+    ],
+    "Nehru Enclave": [
+      235
+    ],
+    "Okhla NSIC": [
+      237
+    ],
+    "Sukhdev Vihar": [
+      238
+    ],
+    "JAMIA MILLIA ISLAMIA": [
+      239
+    ],
+    "Okhla Vihar": [
+      240
+    ],
+    "Jasola Vihar Shaheen Bagh": [
+      241
+    ],
+    "Kalindi Kunj": [
+      242
+    ],
+    "Okhla Bird Sanctuary": [
+      243
+    ],
+    "Sector 55-66": [
+      245
+    ],
+    "Sector 54 Chowk": [
+      246
+    ],
+    "Sector 53-54": [
+      247
+    ],
+    "Sector 42-43": [
+      248
+    ],
+    "DLF Phase 1": [
+      249
+    ],
+    "DLF Phase 2": [
+      251
+    ],
+    "Belvedere Towers": [
+      252
+    ],
+    "Cyber City": [
+      253
+    ],
+    "Moulsari Avenue": [
+      254
+    ],
+    "DLF Phase 3": [
+      255
+    ],
+    "New Delhi-Airport Express": [
+      256
+    ],
+    "Shivaji Stadium": [
+      257
+    ],
+    "Dhaula Kuan": [
+      258
+    ],
+    "Delhi Aerocity": [
+      259
+    ],
+    "IGI Airport": [
+      260
+    ],
+    "Noida Sector 51": [
+      262
+    ],
+    "Noida Sector 50": [
+      263
+    ],
+    "Noida Sector 76": [
+      264
+    ],
+    "Noida Sector 101": [
+      265
+    ],
+    "Noida Sector 81": [
+      266
+    ],
+    "NSEZ Noida": [
+      267
+    ],
+    "Noida Sector 83": [
+      268
+    ],
+    "Noida Sector 137": [
+      269
+    ],
+    "Noida Sector 142": [
+      270
+    ],
+    "Noida Sector 143": [
+      271
+    ],
+    "Noida Sector 144": [
+      272
+    ],
+    "Noida Sector 145": [
+      273
+    ],
+    "Noida Sector 146": [
+      274
+    ],
+    "Noida Sector 147": [
+      275
+    ],
+    "Noida Sector 148": [
+      276
+    ],
+    "Knowledge Park II": [
+      277
+    ],
+    "Pari Chowk Greater Noida": [
+      278
+    ],
+    "Alpha 1 Greater Noida": [
+      279
+    ],
+    "Delta 1 Greater Noida": [
+      280
+    ],
+    "GNIDA Office": [
+      281
+    ],
+    "Depot Greater Noida": [
+      282
+    ],
+    "Nangli": [
+      284
+    ],
+    "Najafgarh": [
+      285
+    ],
+    "Dhansa Bus Stand": [
+      286
+    ]
+  },
+  "adjacency": [
+    [
+      {
+        "to": 1,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 261,
+        "time": 8,
+        "dist": 0.2,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 0,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 2,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 1,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 3,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 2,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 4,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 3,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 5,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 4,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 6,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 5,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 7,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 6,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 8,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 7,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 9,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 283,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Grey"
+      }
+    ],
+    [
+      {
+        "to": 8,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 10,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 9,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 11,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 10,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 12,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 11,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 13,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 12,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 14,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 220,
+        "time": 8,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 13,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 15,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 14,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 16,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 15,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 17,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 16,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 18,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 17,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 19,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 189,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 18,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 20,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 19,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 21,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 20,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 22,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 147,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Green_Branch"
+      }
+    ],
+    [
+      {
+        "to": 21,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 23,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 22,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 24,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 23,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 25,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 24,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 26,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 25,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 27,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 26,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 28,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 27,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 29,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 73,
+        "time": 7,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 28,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 30,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 29,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 31,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 153,
+        "time": 6,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 30,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 32,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 31,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 33,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 32,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 34,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 50,
+        "time": 3,
+        "dist": 0.05,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 33,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 35,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 34,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 36,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 203,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 35,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 37,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 36,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 38,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 37,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 39,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 38,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 40,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 39,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 41,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 40,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 42,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 244,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 41,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 43,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 42,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 44,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 43,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 45,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 44,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 46,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 262,
+        "time": 10,
+        "dist": 0.6,
+        "isTransfer": true,
+        "fromLine": "Blue",
+        "toLine": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 45,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 47,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 46,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 48,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 47,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      },
+      {
+        "to": 49,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 48,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 51,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 33,
+        "time": 3,
+        "dist": 0.05,
+        "isTransfer": true,
+        "fromLine": "Blue_Vaishali",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 50,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 52,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 51,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 53,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 52,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 54,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 53,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 55,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 210,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Blue_Vaishali",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 54,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 56,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 209,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Blue_Vaishali",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 55,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      },
+      {
+        "to": 57,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 56,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 59,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 58,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 60,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 59,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 61,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 60,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 62,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 61,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 63,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 62,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 64,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 183,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 63,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 65,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 64,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 66,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 65,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 67,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 66,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 68,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 67,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 69,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 68,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 70,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 110,
+        "time": 10,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Red"
+      },
+      {
+        "to": 148,
+        "time": 8,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 69,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 71,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 70,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 72,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 71,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 73,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 256,
+        "time": 12,
+        "dist": 0.5,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 72,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 74,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 28,
+        "time": 7,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 73,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 75,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 74,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 76,
+        "time": 1,
+        "dist": 0.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 155,
+        "time": 7,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 75,
+        "time": 1,
+        "dist": 0.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 77,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 76,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 78,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 77,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 79,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 78,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 80,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 197,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 79,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 81,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 80,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 82,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 81,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 83,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 231,
+        "time": 10,
+        "dist": 0.35,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 82,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 84,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 83,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 85,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 84,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 86,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 85,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 87,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 86,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 88,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 87,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 89,
+        "time": 5,
+        "dist": 2.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 88,
+        "time": 5,
+        "dist": 2.7,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 90,
+        "time": 5,
+        "dist": 2.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 89,
+        "time": 5,
+        "dist": 2.3,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 91,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 90,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 92,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 250,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Yellow",
+        "toLine": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 91,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 93,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 92,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Yellow"
+      },
+      {
+        "to": 94,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 93,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 96,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 95,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 97,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 96,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 98,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 97,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 99,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 98,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 100,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 99,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 101,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 100,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 102,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 101,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 103,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 102,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 104,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 103,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 105,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 104,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 106,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 105,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 107,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 106,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 108,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 214,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Red",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 107,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 109,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 108,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 110,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 109,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 111,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 69,
+        "time": 10,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Red",
+        "toLine": "Yellow"
+      },
+      {
+        "to": 148,
+        "time": 12,
+        "dist": 0.2,
+        "isTransfer": true,
+        "fromLine": "Red",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 110,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 112,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 111,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 113,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 112,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 114,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 113,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 115,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 114,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 116,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 124,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Red",
+        "toLine": "Green"
+      }
+    ],
+    [
+      {
+        "to": 115,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 117,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 116,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 118,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 117,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 119,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 185,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Red",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 118,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 120,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 119,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 121,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 120,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 122,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 121,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Red"
+      },
+      {
+        "to": 123,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 122,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Red"
+      }
+    ],
+    [
+      {
+        "to": 125,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 115,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Green",
+        "toLine": "Red"
+      }
+    ],
+    [
+      {
+        "to": 124,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 126,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 145,
+        "time": 3,
+        "dist": 0.05,
+        "isTransfer": true,
+        "fromLine": "Green",
+        "toLine": "Green_Branch"
+      }
+    ],
+    [
+      {
+        "to": 125,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 127,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 187,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Green",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 126,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 128,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 127,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 129,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 128,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 130,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 129,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 131,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 130,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 132,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 131,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 133,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 132,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 134,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 133,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 135,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 134,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 136,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 135,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 137,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 136,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 138,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 137,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 139,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 138,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 140,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 139,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 141,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 140,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 142,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 141,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 143,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 142,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Green"
+      },
+      {
+        "to": 144,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 143,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Green"
+      }
+    ],
+    [
+      {
+        "to": 146,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Green_Branch"
+      },
+      {
+        "to": 125,
+        "time": 3,
+        "dist": 0.05,
+        "isTransfer": true,
+        "fromLine": "Green_Branch",
+        "toLine": "Green"
+      }
+    ],
+    [
+      {
+        "to": 145,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Green_Branch"
+      },
+      {
+        "to": 147,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Green_Branch"
+      }
+    ],
+    [
+      {
+        "to": 146,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Green_Branch"
+      },
+      {
+        "to": 21,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Green_Branch",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 149,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 110,
+        "time": 12,
+        "dist": 0.2,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Red"
+      },
+      {
+        "to": 69,
+        "time": 8,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 148,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 150,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 149,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 151,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 150,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 152,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 151,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 153,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 152,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 154,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 30,
+        "time": 6,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 153,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 155,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 154,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 156,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 75,
+        "time": 7,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 155,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 157,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 156,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 158,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 157,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 159,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 158,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 160,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 199,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 159,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 161,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 160,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 162,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 161,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 163,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 162,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 164,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 236,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Violet",
+        "toLine": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 163,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 165,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 164,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 166,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 165,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 167,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 166,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 168,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 167,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 169,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 168,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 170,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 169,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 171,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 170,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 172,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 171,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 173,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 172,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 174,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 173,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 175,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 174,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 176,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 175,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 177,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 176,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 178,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 177,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 179,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 178,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 180,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 179,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      },
+      {
+        "to": 181,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 180,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 183,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 182,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 184,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 63,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 183,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 185,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 184,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 186,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 118,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Red"
+      }
+    ],
+    [
+      {
+        "to": 185,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 187,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 186,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 188,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 126,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Green"
+      }
+    ],
+    [
+      {
+        "to": 187,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 189,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 188,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 190,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 18,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 189,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 191,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 190,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 192,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 191,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 193,
+        "time": 7,
+        "dist": 3.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 192,
+        "time": 7,
+        "dist": 3.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 194,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 258,
+        "time": 15,
+        "dist": 0.8,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 193,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 195,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 194,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 196,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 195,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 197,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 196,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 198,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 79,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 197,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 199,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 198,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 200,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 159,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 199,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 201,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 200,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 202,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 201,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 203,
+        "time": 7,
+        "dist": 3.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 202,
+        "time": 7,
+        "dist": 3.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 204,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 35,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 203,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 205,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 204,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 206,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 205,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 207,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 206,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 208,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 207,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 209,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 208,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 210,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 55,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 209,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 211,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 54,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Blue_Vaishali"
+      }
+    ],
+    [
+      {
+        "to": 210,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 212,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 211,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 213,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 212,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 214,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 213,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 215,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 107,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Pink",
+        "toLine": "Red"
+      }
+    ],
+    [
+      {
+        "to": 214,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 216,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 215,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 217,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 216,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 218,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 217,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Pink"
+      },
+      {
+        "to": 219,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 218,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 221,
+        "time": 4,
+        "dist": 2.0,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 13,
+        "time": 8,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Magenta",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 220,
+        "time": 4,
+        "dist": 2.0,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 222,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 221,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 223,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 222,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 224,
+        "time": 5,
+        "dist": 2.6,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 223,
+        "time": 5,
+        "dist": 2.6,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 225,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 224,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 226,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 225,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 227,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 226,
+        "time": 4,
+        "dist": 2.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 228,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 227,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 229,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 228,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 230,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 229,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 231,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 230,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 232,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 82,
+        "time": 10,
+        "dist": 0.35,
+        "isTransfer": true,
+        "fromLine": "Magenta",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 231,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 233,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 232,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 234,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 233,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 235,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 234,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 236,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 235,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 237,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 163,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Magenta",
+        "toLine": "Violet"
+      }
+    ],
+    [
+      {
+        "to": 236,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 238,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 237,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 239,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 238,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 240,
+        "time": 1,
+        "dist": 0.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 239,
+        "time": 1,
+        "dist": 0.5,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 241,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 240,
+        "time": 4,
+        "dist": 1.8,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 242,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 241,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 243,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 242,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 244,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Magenta"
+      }
+    ],
+    [
+      {
+        "to": 243,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Magenta"
+      },
+      {
+        "to": 41,
+        "time": 8,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Magenta",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 246,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 245,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 247,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 246,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 248,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 247,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 249,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 248,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 250,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 249,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 251,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 91,
+        "time": 6,
+        "dist": 0.25,
+        "isTransfer": true,
+        "fromLine": "Rapid Metro",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 250,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 252,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 251,
+        "time": 1,
+        "dist": 0.7,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 253,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 252,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 254,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 253,
+        "time": 1,
+        "dist": 0.6,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      },
+      {
+        "to": 255,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 254,
+        "time": 2,
+        "dist": 0.8,
+        "isTransfer": false,
+        "line": "Rapid Metro"
+      }
+    ],
+    [
+      {
+        "to": 257,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 72,
+        "time": 12,
+        "dist": 0.5,
+        "isTransfer": true,
+        "fromLine": "Airport Express",
+        "toLine": "Yellow"
+      }
+    ],
+    [
+      {
+        "to": 256,
+        "time": 4,
+        "dist": 1.9,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 258,
+        "time": 13,
+        "dist": 6.4,
+        "isTransfer": false,
+        "line": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 257,
+        "time": 13,
+        "dist": 6.4,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 259,
+        "time": 12,
+        "dist": 6.2,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 193,
+        "time": 15,
+        "dist": 0.8,
+        "isTransfer": true,
+        "fromLine": "Airport Express",
+        "toLine": "Pink"
+      }
+    ],
+    [
+      {
+        "to": 258,
+        "time": 12,
+        "dist": 6.2,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 260,
+        "time": 7,
+        "dist": 3.4,
+        "isTransfer": false,
+        "line": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 259,
+        "time": 7,
+        "dist": 3.4,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 261,
+        "time": 6,
+        "dist": 2.9,
+        "isTransfer": false,
+        "line": "Airport Express"
+      }
+    ],
+    [
+      {
+        "to": 260,
+        "time": 6,
+        "dist": 2.9,
+        "isTransfer": false,
+        "line": "Airport Express"
+      },
+      {
+        "to": 0,
+        "time": 8,
+        "dist": 0.2,
+        "isTransfer": true,
+        "fromLine": "Airport Express",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 263,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 45,
+        "time": 10,
+        "dist": 0.6,
+        "isTransfer": true,
+        "fromLine": "Aqua",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 262,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 264,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 263,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 265,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 264,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 266,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 265,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 267,
+        "time": 4,
+        "dist": 2.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 266,
+        "time": 4,
+        "dist": 2.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 268,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 267,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 269,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 268,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 270,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 269,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 271,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 270,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 272,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 271,
+        "time": 3,
+        "dist": 1.4,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 273,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 272,
+        "time": 2,
+        "dist": 1.2,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 274,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 273,
+        "time": 3,
+        "dist": 1.7,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 275,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 274,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 276,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 275,
+        "time": 3,
+        "dist": 1.6,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 277,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 276,
+        "time": 5,
+        "dist": 2.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 278,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 277,
+        "time": 2,
+        "dist": 1.1,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 279,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 278,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 280,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 279,
+        "time": 3,
+        "dist": 1.5,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 281,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 280,
+        "time": 3,
+        "dist": 1.3,
+        "isTransfer": false,
+        "line": "Aqua"
+      },
+      {
+        "to": 282,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 281,
+        "time": 2,
+        "dist": 0.9,
+        "isTransfer": false,
+        "line": "Aqua"
+      }
+    ],
+    [
+      {
+        "to": 284,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      },
+      {
+        "to": 8,
+        "time": 5,
+        "dist": 0.15,
+        "isTransfer": true,
+        "fromLine": "Grey",
+        "toLine": "Blue"
+      }
+    ],
+    [
+      {
+        "to": 283,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      },
+      {
+        "to": 285,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      }
+    ],
+    [
+      {
+        "to": 284,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      },
+      {
+        "to": 286,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      }
+    ],
+    [
+      {
+        "to": 285,
+        "time": 2,
+        "dist": 1.0,
+        "isTransfer": false,
+        "line": "Grey"
+      }
+    ]
+  ],
+  "interchanges": [
+    {
+      "station1": "Kashmere Gate",
+      "line1": "Red",
+      "station2": "Kashmere Gate",
+      "line2": "Yellow",
+      "time": 10,
+      "dist": 0.15
+    },
+    {
+      "station1": "Kashmere Gate",
+      "line1": "Red",
+      "station2": "Kashmere Gate",
+      "line2": "Violet",
+      "time": 12,
+      "dist": 0.2
+    },
+    {
+      "station1": "Kashmere Gate",
+      "line1": "Yellow",
+      "station2": "Kashmere Gate",
+      "line2": "Violet",
+      "time": 8,
+      "dist": 0.15
+    },
+    {
+      "station1": "Rajiv Chowk",
+      "line1": "Yellow",
+      "station2": "Rajiv Chowk",
+      "line2": "Blue",
+      "time": 7,
+      "dist": 0.15
+    },
+    {
+      "station1": "New Delhi",
+      "line1": "Yellow",
+      "station2": "New Delhi-Airport Express",
+      "line2": "Airport Express",
+      "time": 12,
+      "dist": 0.5
+    },
+    {
+      "station1": "Central Secretariat",
+      "line1": "Yellow",
+      "station2": "Central Secretariat",
+      "line2": "Violet",
+      "time": 7,
+      "dist": 0.15
+    },
+    {
+      "station1": "Hauz Khas",
+      "line1": "Yellow",
+      "station2": "Hauz Khas",
+      "line2": "Magenta",
+      "time": 10,
+      "dist": 0.35
+    },
+    {
+      "station1": "Dilli Haat INA",
+      "line1": "Yellow",
+      "station2": "Dilli Haat INA",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Azadpur",
+      "line1": "Yellow",
+      "station2": "Azadpur",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Sikandarpur",
+      "line1": "Yellow",
+      "station2": "Sikandarpur",
+      "line2": "Rapid Metro",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Janak Puri West",
+      "line1": "Blue",
+      "station2": "Janak Puri West",
+      "line2": "Magenta",
+      "time": 8,
+      "dist": 0.15
+    },
+    {
+      "station1": "Rajouri Garden",
+      "line1": "Blue",
+      "station2": "Rajouri Garden",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Kirti Nagar",
+      "line1": "Blue",
+      "station2": "Kirti Nagar",
+      "line2": "Green_Branch",
+      "time": 5,
+      "dist": 0.15
+    },
+    {
+      "station1": "Mandi House",
+      "line1": "Blue",
+      "station2": "Mandi House",
+      "line2": "Violet",
+      "time": 6,
+      "dist": 0.15
+    },
+    {
+      "station1": "Yamuna Bank",
+      "line1": "Blue",
+      "station2": "Yamuna Bank",
+      "line2": "Blue_Vaishali",
+      "time": 3,
+      "dist": 0.05
+    },
+    {
+      "station1": "Mayur Vihar Phase-1",
+      "line1": "Blue",
+      "station2": "Mayur Vihar Phase-1",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Anand Vihar",
+      "line1": "Blue_Vaishali",
+      "station2": "Anand Vihar",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Karkar Duma",
+      "line1": "Blue_Vaishali",
+      "station2": "Karkar Duma",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Botanical Garden",
+      "line1": "Blue",
+      "station2": "Botanical Garden",
+      "line2": "Magenta",
+      "time": 8,
+      "dist": 0.25
+    },
+    {
+      "station1": "Dwarka",
+      "line1": "Blue",
+      "station2": "Dwarka",
+      "line2": "Grey",
+      "time": 5,
+      "dist": 0.15
+    },
+    {
+      "station1": "Dwarka Sector 21",
+      "line1": "Blue",
+      "station2": "Dwarka Sector 21",
+      "line2": "Airport Express",
+      "time": 8,
+      "dist": 0.2
+    },
+    {
+      "station1": "Inderlok",
+      "line1": "Red",
+      "station2": "Inderlok",
+      "line2": "Green",
+      "time": 5,
+      "dist": 0.15
+    },
+    {
+      "station1": "Netaji Subash Place",
+      "line1": "Red",
+      "station2": "Netaji Subash Place",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Welcome",
+      "line1": "Red",
+      "station2": "Welcome",
+      "line2": "Pink",
+      "time": 5,
+      "dist": 0.15
+    },
+    {
+      "station1": "Lajpat Nagar",
+      "line1": "Violet",
+      "station2": "Lajpat Nagar",
+      "line2": "Pink",
+      "time": 6,
+      "dist": 0.25
+    },
+    {
+      "station1": "Kalkaji Mandir",
+      "line1": "Violet",
+      "station2": "Kalkaji Mandir",
+      "line2": "Magenta",
+      "time": 8,
+      "dist": 0.25
+    },
+    {
+      "station1": "Ashok Park Main",
+      "line1": "Green",
+      "station2": "Ashok Park Main",
+      "line2": "Green_Branch",
+      "time": 3,
+      "dist": 0.05
+    },
+    {
+      "station1": "Punjabi Bagh",
+      "line1": "Green",
+      "station2": "Punjabi Bagh West",
+      "line2": "Pink",
+      "time": 8,
+      "dist": 0.25
+    },
+    {
+      "station1": "Dhaula Kuan",
+      "line1": "Airport Express",
+      "station2": "Durgabai Deshmukh South Campus",
+      "line2": "Pink",
+      "time": 15,
+      "dist": 0.8
+    },
+    {
+      "station1": "Noida Sector 52",
+      "line1": "Blue",
+      "station2": "Noida Sector 51",
+      "line2": "Aqua",
+      "time": 10,
+      "dist": 0.6
+    }
+  ]
+}
