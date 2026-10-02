@@ -1,597 +1,434 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <queue>
-#include <unordered_map>
-#include <unordered_set>
-#include <cmath>
-#include <algorithm>
-#include <iomanip>
-#include <climits>
+#include <bits/stdc++.h>
 #include "search.cpp"
+using namespace std;
 
-/**
- * Node representation in the transit graph.
- * A physical station can have multiple nodes if served by multiple lines (interchanges).
- */
-struct StationNode {
-    int id;
-    std::string station;
-    std::string line;
+struct node {
+    string station;
+    string line;
 };
 
-/**
- * Directed/Undirected weighted edge between transit stations.
- */
-struct Edge {
+struct edge {
     int to;
-    int timeMinutes;
-    double distKm;
-    bool isTransfer;
-    std::string line;
+    int time;
+    double dist;
+    bool transfer;
 };
 
-/**
- * Detailed step in a computed itinerary.
- */
-struct RouteStep {
-    std::string station;
-    std::string line;
-    int timeMinutes;
-    double distKm;
-    bool isTransfer;
-    std::string transferNote;
-};
-
-/**
- * Complete route result returned by Dijkstra engine.
- */
-struct RouteResult {
-    bool found;
-    std::string source;
-    std::string destination;
-    double totalDistKm;
-    int totalTimeMinutes;
-    int interchangeCount;
-    int stationCount;
-    std::vector<int> pathNodeIds;
-    std::vector<RouteStep> steps;
-
-    RouteResult() : found(false), totalDistKm(0.0), totalTimeMinutes(0),
-                    interchangeCount(0), stationCount(0) {}
-};
-
-/**
- * @class MetroGraph
- * @brief Models the Delhi Metro network as a weighted graph spanning 250+ stations
- *        across 13 transit lines with O((V + E) log V) Dijkstra routing.
- */
 class MetroGraph {
 private:
-    std::vector<StationNode> nodes;
-    std::vector<std::vector<Edge>> adj;
-    std::unordered_map<std::string, int> nodeLookup; // "Station#Line" -> id
-    std::unordered_map<std::string, std::vector<int>> stationToNodeIds; // Station -> list of ids
-    std::unordered_set<std::string> uniqueLines;
+    vector<node> nodes;
+    vector<vector<edge>> adj;
+    unordered_map<string, int> nodeID;
 
-    // Helper to find data directory path (checks ./data and ../data)
-    static std::string resolveDataPath(const std::string& filename, const std::string& baseDir = "") {
-        if (!baseDir.empty()) {
-            std::string candidate = baseDir + "/" + filename;
-            std::ifstream test(candidate);
-            if (test.good()) return candidate;
-        }
-        std::vector<std::string> prefixes = {"data/", "../data/", "./"};
-        for (const auto& prefix : prefixes) {
-            std::string fullPath = prefix + filename;
-            std::ifstream test(fullPath);
-            if (test.good()) {
-                return fullPath;
-            }
-        }
+    // Helper to find file in data/ or ../data/ or current folder
+    string getFilePath(string filename) {
+        ifstream f(filename);
+        if (f.good()) return filename;
+        string p1 = "data/" + filename;
+        ifstream f1(p1);
+        if (f1.good()) return p1;
+        string p2 = "../data/" + filename;
+        ifstream f2(p2);
+        if (f2.good()) return p2;
         return filename;
     }
 
 public:
-    MetroGraph() = default;
+    unordered_map<string, vector<int>> stationnodes;
 
-    /**
-     * @brief Adds or retrieves a unique station-line node.
-     */
-    int addNode(const std::string& station, const std::string& line) {
-        std::string key = station + "#" + line;
-        auto it = nodeLookup.find(key);
-        if (it != nodeLookup.end()) {
-            return it->second;
+    vector<string> getAllStations() {
+        vector<string> stations;
+        for (auto &p : stationnodes) {
+            stations.push_back(p.first);
         }
-
-        int id = static_cast<int>(nodes.size());
-        nodes.push_back({id, station, line});
-        adj.emplace_back();
-        nodeLookup[key] = id;
-        stationToNodeIds[station].push_back(id);
-        uniqueLines.insert(line);
-        return id;
-    }
-
-    /**
-     * @brief Adds a bidirectional edge between two station-line nodes.
-     */
-    void addEdge(const std::string& s1, const std::string& l1,
-                 const std::string& s2, const std::string& l2,
-                 int timeMin, double distKm, bool isTransfer = false) {
-        int u = addNode(s1, l1);
-        int v = addNode(s2, l2);
-
-        adj[u].push_back({v, timeMin, distKm, isTransfer, l2});
-        adj[v].push_back({u, timeMin, distKm, isTransfer, l1});
-    }
-
-    /**
-     * @brief Parses a transit line CSV file.
-     * Expected format: line,station,distance_from_start
-     */
-    bool loadLineCSV(const std::string& filepath) {
-        std::ifstream file(filepath);
-        if (!file.is_open()) {
-            std::cerr << "Warning: Could not open line CSV: " << filepath << "\n";
-            return false;
-        }
-
-        std::string line;
-        std::getline(file, line); // Skip CSV header
-
-        std::string prevStation = "";
-        std::string prevLine = "";
-        double prevDist = 0.0;
-
-        while (std::getline(file, line)) {
-            if (line.empty()) continue;
-            std::stringstream ss(line);
-            std::string lineName, stationName, distStr;
-
-            if (!std::getline(ss, lineName, ',') ||
-                !std::getline(ss, stationName, ',') ||
-                !std::getline(ss, distStr, ',')) {
-                continue;
-            }
-
-            // Trim whitespace
-            auto trim = [](std::string& s) {
-                while (!s.empty() && (s.back() == '\r' || s.back() == ' ' || s.back() == '\t')) s.pop_back();
-                while (!s.empty() && (s.front() == ' ' || s.front() == '\t')) s.erase(s.begin());
-            };
-            trim(lineName);
-            trim(stationName);
-            trim(distStr);
-
-            double dist = std::stod(distStr);
-            addNode(stationName, lineName);
-
-            if (!prevStation.empty() && prevLine == lineName) {
-                double edgeDist = std::abs(dist - prevDist);
-                int edgeTime = std::max(1, static_cast<int>(std::round(edgeDist * 2.0)));
-                addEdge(stationName, lineName, prevStation, prevLine, edgeTime, edgeDist, false);
-            }
-
-            prevStation = stationName;
-            prevLine = lineName;
-            prevDist = dist;
-        }
-        return true;
-    }
-
-    /**
-     * @brief Parses the interchange CSV file.
-     * Expected format: station1,line1,station2,line2,time,dist
-     */
-    bool loadInterchangesCSV(const std::string& filepath) {
-        std::ifstream file(filepath);
-        if (!file.is_open()) {
-            std::cerr << "Warning: Could not open interchanges CSV: " << filepath << "\n";
-            return false;
-        }
-
-        std::string line;
-        std::getline(file, line); // Skip header
-
-        while (std::getline(file, line)) {
-            if (line.empty()) continue;
-            std::stringstream ss(line);
-            std::string s1, l1, s2, l2, timeStr, distStr;
-
-            if (!std::getline(ss, s1, ',') ||
-                !std::getline(ss, l1, ',') ||
-                !std::getline(ss, s2, ',') ||
-                !std::getline(ss, l2, ',') ||
-                !std::getline(ss, timeStr, ',') ||
-                !std::getline(ss, distStr, ',')) {
-                continue;
-            }
-
-            auto trim = [](std::string& s) {
-                while (!s.empty() && (s.back() == '\r' || s.back() == ' ' || s.back() == '\t')) s.pop_back();
-                while (!s.empty() && (s.front() == ' ' || s.front() == '\t')) s.erase(s.begin());
-            };
-            trim(s1); trim(l1); trim(s2); trim(l2); trim(timeStr); trim(distStr);
-
-            int timeMin = std::stoi(timeStr);
-            double distKm = std::stod(distStr);
-
-            addEdge(s1, l1, s2, l2, timeMin, distKm, true);
-        }
-        return true;
-    }
-
-    /**
-     * @brief Automates full graph construction across all 13 transit lines and interchanges.
-     */
-    bool loadNetwork(const std::string& baseDir = "") {
-        std::vector<std::string> lineFiles = {
-            "blue_main.csv", "Blue_Vaishali.csv", "Yellow.csv", "red.csv",
-            "green.csv", "green_branch.csv", "violet.csv", "pink.csv",
-            "magenta.csv", "rapid.csv", "airport.csv", "aqua.csv", "grey.csv"
-        };
-
-        bool allLoaded = true;
-        for (const auto& file : lineFiles) {
-            std::string resolved = resolveDataPath(file, baseDir);
-            if (!loadLineCSV(resolved)) {
-                allLoaded = false;
-            }
-        }
-
-        std::string interchangeFile = resolveDataPath("linechange.csv", baseDir);
-        if (!loadInterchangesCSV(interchangeFile)) {
-            allLoaded = false;
-        }
-
-        return allLoaded;
-    }
-
-    std::vector<std::string> getAllStations() const {
-        std::vector<std::string> stations;
-        stations.reserve(stationToNodeIds.size());
-        for (const auto& pair : stationToNodeIds) {
-            stations.push_back(pair.first);
-        }
-        std::sort(stations.begin(), stations.end());
         return stations;
     }
 
-    std::vector<std::string> getAllLines() const {
-        std::vector<std::string> lines(uniqueLines.begin(), uniqueLines.end());
-        std::sort(lines.begin(), lines.end());
-        return lines;
+    void addNode(string station, string line) {
+        string key = station + "#" + line;
+
+        if (nodeID.find(key) != nodeID.end()) {
+            return;
+        }
+
+        int id = nodes.size();
+        stationnodes[station].push_back(id);
+
+        nodeID[key] = id;
+        nodes.push_back({station, line});
+
+        adj.push_back({});
     }
 
-    size_t getStationCount() const { return stationToNodeIds.size(); }
-    size_t getNodeCount() const { return nodes.size(); }
-    size_t getLineCount() const { return uniqueLines.size(); }
+    void addEdge(string station1, string station2,
+                 string line1, string line2,
+                 int time, double dist) {
 
-    bool hasStation(const std::string& station) const {
-        return stationToNodeIds.find(station) != stationToNodeIds.end();
+        if (nodeID.find(station1 + "#" + line1) == nodeID.end()) {
+            cout << "MISSING: " << station1 + "#" + line1 << endl;
+        }
+        if (nodeID.find(station2 + "#" + line2) == nodeID.end()) {
+            cout << "MISSING: " << station2 + "#" + line2 << endl;
+        }
+        int u = nodeID[station1 + "#" + line1];
+        int v = nodeID[station2 + "#" + line2];
+        bool transfer = false;
+        if (line1 != line2) {
+            transfer = true;
+        }
+        adj[u].push_back({v, time, dist, transfer});
+        adj[v].push_back({u, time, dist, transfer});
     }
 
-    /**
-     * @brief O((V + E) log V) Dijkstra-based shortest path routing engine.
-     * @param srcStation Name of source station
-     * @param destStation Name of destination station
-     * @param optimizationMode 0 = Fastest Time, 1 = Shortest Distance, 2 = Fewest Interchanges
-     */
-    RouteResult findRoute(const std::string& srcStation,
-                          const std::string& destStation,
-                          int optimizationMode = 0) const {
-        RouteResult result;
-        result.source = srcStation;
-        result.destination = destStation;
-
-        if (!hasStation(srcStation) || !hasStation(destStation)) {
-            return result;
+    void printgraph() {
+        int n = adj.size();
+        for (int i = 0; i < n; i++) {
+            cout << nodes[i].station << "(" << nodes[i].line << ")" << endl;
+            for (edge e : adj[i]) {
+                int to = e.to;
+                cout << nodes[to].station << "(" << nodes[to].line << ")";
+                cout << " " << e.time << "  " << e.dist << endl;
+            }
+            cout << endl;
         }
+    }
 
-        if (srcStation == destStation) {
-            result.found = true;
-            result.stationCount = 1;
-            int nodeId = stationToNodeIds.at(srcStation).front();
-            result.pathNodeIds.push_back(nodeId);
-            result.steps.push_back({srcStation, nodes[nodeId].line, 0, 0.0, false, "Source and destination are identical."});
-            return result;
+    void printNeighbours(string station, string line) {
+        int u = nodeID[station + "#" + line];
+
+        cout << station << "(" << line << ")\n";
+
+        for (auto &e : adj[u]) {
+            cout << " -> "
+                 << nodes[e.to].station
+                 << "("
+                 << nodes[e.to].line
+                 << ") "
+                 << e.time
+                 << " "
+                 << e.dist
+                 << '\n';
         }
+    }
 
-        const auto& srcNodeIds = stationToNodeIds.at(srcStation);
-        const auto& destNodeIds = stationToNodeIds.at(destStation);
+    pair<double, vector<int>> dijkstra(int src, int dest, double a, double b, double c) {
+        int n = nodes.size();
 
-        double bestCost = 1e18;
-        std::vector<int> bestPath;
+        vector<double> dist(n, 1e18);
+        vector<int> parent(n, -1);
 
-        // Weights: timeCoeff, distCoeff, interchangePenalty
-        double wTime = 1.0, wDist = 0.0, wTransfer = 8.0;
-        if (optimizationMode == 1) { // Shortest Distance
-            wTime = 0.0; wDist = 1.0; wTransfer = 0.5;
-        } else if (optimizationMode == 2) { // Fewest Interchanges
-            wTime = 0.2; wDist = 0.0; wTransfer = 1000.0;
-        }
+        priority_queue<
+            pair<double, int>,
+            vector<pair<double, int>>,
+            greater<pair<double, int>>
+        > pq;
 
-        int totalV = static_cast<int>(nodes.size());
+        dist[src] = 0;
+        pq.push({0.0, src});
 
-        for (int srcId : srcNodeIds) {
-            std::vector<double> dist(totalV, 1e18);
-            std::vector<int> parent(totalV, -1);
+        while (!pq.empty()) {
+            auto [d, u] = pq.top();
+            pq.pop();
 
-            // Min-priority queue: {cost, nodeId}
-            std::priority_queue<
-                std::pair<double, int>,
-                std::vector<std::pair<double, int>>,
-                std::greater<std::pair<double, int>>
-            > pq;
+            if (d > dist[u]) continue;
 
-            dist[srcId] = 0.0;
-            pq.push({0.0, srcId});
+            if (u == dest) break;
 
-            while (!pq.empty()) {
-                auto [d, u] = pq.top();
-                pq.pop();
-
-                if (d > dist[u]) continue;
-
-                for (const auto& edge : adj[u]) {
-                    int v = edge.to;
-                    double weight = (wTime * edge.timeMinutes) +
-                                    (wDist * edge.distKm) +
-                                    (edge.isTransfer ? wTransfer : 0.0);
-
-                    if (dist[u] + weight < dist[v]) {
-                        dist[v] = dist[u] + weight;
-                        parent[v] = u;
-                        pq.push({dist[v], v});
-                    }
+            for (auto &e : adj[u]) {
+                int v = e.to;
+                double wt = a * e.time + b * e.dist + c * (e.transfer ? 1.0 : 0.0);
+                if (dist[u] + wt < dist[v]) {
+                    dist[v] = dist[u] + wt;
+                    parent[v] = u;
+                    pq.push({dist[v], v});
                 }
             }
+        }
 
-            for (int destId : destNodeIds) {
-                if (dist[destId] < bestCost) {
-                    bestCost = dist[destId];
-                    std::vector<int> path;
-                    for (int curr = destId; curr != -1; curr = parent[curr]) {
-                        path.push_back(curr);
-                    }
-                    std::reverse(path.begin(), path.end());
+        if (dist[dest] >= 1e17) {
+            return {-1.0, {}};
+        }
+
+        vector<int> path;
+
+        for (int cur = dest; cur != -1; cur = parent[cur]) {
+            path.push_back(cur);
+        }
+
+        reverse(path.begin(), path.end());
+
+        return {dist[dest], path};
+    }
+
+    void getPath(string station1, string station2, int type = 1) {
+        if (stationnodes.find(station1) == stationnodes.end() ||
+            stationnodes.find(station2) == stationnodes.end()) {
+            cout << "Invalid station name\n";
+            return;
+        }
+        if (station1 == station2) {
+            cout << "You Are Here Already" << endl;
+            return;
+        }
+
+        // Set weights (a, b, c) based on user's choice:
+        // 1: Fastest Path (minimizes time + interchange penalty)
+        // 2: Fewest Interchanges (minimizes line transfers)
+        // 3: Smallest Distance (minimizes physical distance in km)
+        double a = 1.0, b = 0.0, c = 10.0;
+        string typeLabel = "Fastest Route";
+        if (type == 2) {
+            a = 0.1; b = 0.0; c = 1000.0;
+            typeLabel = "Fewest Interchanges";
+        } else if (type == 3) {
+            a = 0.0; b = 1.0; c = 0.5;
+            typeLabel = "Smallest Distance";
+        }
+
+        double bestcost = 1e18;
+        vector<int> bestPath;
+        for (int u : stationnodes[station1]) {
+            for (int v : stationnodes[station2]) {
+                auto [cost, path] = dijkstra(u, v, a, b, c);
+                if (cost != -1.0 && cost < bestcost) {
+                    bestcost = cost;
                     bestPath = path;
                 }
             }
         }
 
         if (bestPath.empty()) {
-            return result;
-        }
-
-        result.found = true;
-        result.pathNodeIds = bestPath;
-
-        // Reconstruct itinerary and compute physical metrics
-        double accumDist = 0.0;
-        int accumTime = 0;
-        int interchanges = 0;
-        std::unordered_set<std::string> visitedStations;
-
-        for (size_t i = 0; i < bestPath.size(); i++) {
-            int u = bestPath[i];
-            const auto& nodeU = nodes[u];
-            visitedStations.insert(nodeU.station);
-
-            if (i == 0) {
-                result.steps.push_back({
-                    nodeU.station,
-                    nodeU.line,
-                    0,
-                    0.0,
-                    false,
-                    "Board " + nodeU.line + " Line at " + nodeU.station
-                });
-                continue;
-            }
-
-            int prev = bestPath[i - 1];
-            const auto& nodePrev = nodes[prev];
-
-            // Locate edge connecting prev -> u
-            int edgeTime = 0;
-            double edgeDist = 0.0;
-            bool isTransfer = false;
-            for (const auto& edge : adj[prev]) {
-                if (edge.to == u) {
-                    edgeTime = edge.timeMinutes;
-                    edgeDist = edge.distKm;
-                    isTransfer = edge.isTransfer;
-                    break;
-                }
-            }
-
-            accumDist += edgeDist;
-            accumTime += edgeTime;
-
-            if (isTransfer || nodePrev.line != nodeU.line) {
-                interchanges++;
-                std::string note = "Transfer from " + nodePrev.line + " Line to " +
-                                   nodeU.line + " Line (approx " + std::to_string(edgeTime) + " mins walk)";
-                result.steps.push_back({nodeU.station, nodeU.line, edgeTime, edgeDist, true, note});
-            } else {
-                result.steps.push_back({nodeU.station, nodeU.line, edgeTime, edgeDist, false, ""});
-            }
-        }
-
-        result.totalDistKm = accumDist;
-        result.totalTimeMinutes = accumTime;
-        result.interchangeCount = interchanges;
-        result.stationCount = static_cast<int>(visitedStations.size());
-
-        return result;
-    }
-
-    /**
-     * @brief Formats and prints the computed route to console.
-     */
-    void printRoute(const RouteResult& res) const {
-        if (!res.found) {
-            std::cout << "\n❌ No valid transit path found between "
-                      << res.source << " and " << res.destination << ".\n";
+            cout << "No path found\n";
             return;
         }
 
-        std::cout << "\n=======================================================\n";
-        std::cout << "               DELHI METRO TRANSIT ROUTE               \n";
-        std::cout << "=======================================================\n";
-        std::cout << "📍 Source Station      : " << res.source << "\n";
-        std::cout << "🎯 Destination Station : " << res.destination << "\n";
-        std::cout << "⏱️  Estimated Time      : " << res.totalTimeMinutes << " mins\n";
-        std::cout << "📏 Distance            : " << std::fixed << std::setprecision(2) << res.totalDistKm << " km\n";
-        std::cout << "🔄 Line Interchanges   : " << res.interchangeCount << "\n";
-        std::cout << "🚇 Total Stations      : " << res.stationCount << "\n";
-        std::cout << "-------------------------------------------------------\n";
-        std::cout << "JOURNEY TIMELINE:\n\n";
+        int interchange = 0;
+        int totalTime = 0;
+        double totalDist = 0.0;
 
-        for (size_t i = 0; i < res.steps.size(); i++) {
-            const auto& step = res.steps[i];
-            if (i == 0) {
-                std::cout << " [START] 🟢 " << step.station << " [" << step.line << " Line]\n";
-            } else if (i + 1 == res.steps.size()) {
-                std::cout << " [END]   🏁 " << step.station << " [" << step.line << " Line]\n";
-            } else if (step.isTransfer) {
-                std::cout << "         🔄 INTERCHANGE: " << step.transferNote << "\n";
-                std::cout << "                 Now on " << step.station << " [" << step.line << " Line]\n";
-            } else {
-                std::cout << "         │  " << step.station << " [" << step.line << " Line]\n";
+        cout << "\n--- Route Type: " << typeLabel << " ---\n";
+        cout << "Board "
+             << nodes[bestPath[0]].line
+             << " Line at "
+             << nodes[bestPath[0]].station
+             << endl << endl;
+
+        int n = bestPath.size();
+        for (int i = 0; i < n; i++) {
+            cout << nodes[bestPath[i]].station << endl;
+
+            if (i + 1 < n) {
+                // Accumulate physical time and distance
+                int u = bestPath[i];
+                int v = bestPath[i + 1];
+                for (auto &e : adj[u]) {
+                    if (e.to == v) {
+                        totalTime += e.time;
+                        totalDist += e.dist;
+                        break;
+                    }
+                }
+
+                if (nodes[bestPath[i]].line != nodes[bestPath[i + 1]].line) {
+                    cout << "Change here from " << nodes[bestPath[i]].line
+                         << " to " << nodes[bestPath[i + 1]].line << endl;
+                    interchange++;
+                    if (nodes[bestPath[i]].station == nodes[bestPath[i + 1]].station) {
+                        i++; // skip duplicate station row
+                    }
+                }
             }
         }
-        std::cout << "=======================================================\n\n";
+
+        cout << endl;
+        cout << "Total Stations : " << n << endl;
+        cout << "Interchanges   : " << interchange << endl;
+        cout << "Est. Time      : ~" << totalTime << " mins" << endl;
+        cout << "Total Distance : " << fixed << setprecision(2) << totalDist << " km" << endl;
+    }
+
+    void loadCSV(string filename) {
+        string path = getFilePath(filename);
+        ifstream file(path);
+
+        if (!file.is_open()) {
+            cout << "cannot open " << filename << endl;
+            return;
+        }
+
+        string row;
+        getline(file, row); // skip header
+
+        string prevstation = "";
+        string prevline = "";
+        double prevdist = 0;
+
+        while (getline(file, row)) {
+            if (row.empty()) continue;
+            stringstream line(row);
+
+            string linename;
+            string station;
+            string diststr;
+
+            getline(line, linename, ',');
+            getline(line, station, ',');
+            getline(line, diststr, ',');
+
+            // trim
+            while (!linename.empty() && (linename.back() == '\r' || linename.back() == ' ')) linename.pop_back();
+            while (!station.empty() && (station.back() == '\r' || station.back() == ' ')) station.pop_back();
+            while (!diststr.empty() && (diststr.back() == '\r' || diststr.back() == ' ')) diststr.pop_back();
+
+            double dist = stod(diststr);
+
+            addNode(station, linename);
+            if (prevstation != "" && prevline == linename) {
+                double edgedist = dist - prevdist;
+                int time = max(1, (int)round(edgedist * 2));
+                addEdge(station, prevstation,
+                        linename, prevline,
+                        time, edgedist);
+            }
+
+            prevstation = station;
+            prevline = linename;
+            prevdist = dist;
+        }
+    }
+
+    void loadInterchanges(string filename) {
+        string path = getFilePath(filename);
+        ifstream file(path);
+
+        if (!file.is_open()) {
+            cout << "cannot open " << filename << endl;
+            return;
+        }
+
+        string row;
+        getline(file, row); // skip header
+
+        string station1;
+        string station2;
+        string line1;
+        string line2;
+        string timestr;
+        string diststr;
+
+        while (getline(file, row)) {
+            if (row.empty()) continue;
+            stringstream ss(row);
+
+            getline(ss, station1, ',');
+            getline(ss, line1, ',');
+            getline(ss, station2, ',');
+            getline(ss, line2, ',');
+            getline(ss, timestr, ',');
+            getline(ss, diststr, ',');
+
+            // trim
+            while (!station1.empty() && (station1.back() == '\r' || station1.back() == ' ')) station1.pop_back();
+            while (!line1.empty() && (line1.back() == '\r' || line1.back() == ' ')) line1.pop_back();
+            while (!station2.empty() && (station2.back() == '\r' || station2.back() == ' ')) station2.pop_back();
+            while (!line2.empty() && (line2.back() == '\r' || line2.back() == ' ')) line2.pop_back();
+            while (!timestr.empty() && (timestr.back() == '\r' || timestr.back() == ' ')) timestr.pop_back();
+            while (!diststr.empty() && (diststr.back() == '\r' || diststr.back() == ' ')) diststr.pop_back();
+
+            addEdge(station1, station2,
+                    line1, line2,
+                    stoi(timestr), stod(diststr));
+        }
     }
 };
 
-/**
- * Interactive station selection helper using Trie autocomplete.
- */
-std::string promptStationSelection(const Trie& trie, const std::string& promptLabel) {
+string chooseStation(Trie& trie) {
     while (true) {
-        std::cout << promptLabel << " (type prefix for autocomplete): ";
-        std::string input;
-        std::getline(std::cin, input);
+        int n;
+        string prefix;
 
-        if (input.empty()) continue;
+        cout << "Enter station prefix: ";
+        getline(cin, prefix);
 
-        // Check if exact match exists
-        if (trie.search(input)) {
-            return input;
-        }
+        vector<string> suggestions = trie.getSuggestions(prefix);
 
-        // Fetch suggestions
-        auto suggestions = trie.getSuggestions(input, 10);
         if (suggestions.empty()) {
-            std::cout << "⚠️  No stations found matching prefix \"" << input << "\". Please try again.\n";
+            cout << "No stations found\n";
             continue;
         }
 
-        std::cout << "\nSuggestions matching \"" << input << "\":\n";
-        for (size_t i = 0; i < suggestions.size(); i++) {
-            std::cout << "  [" << (i + 1) << "] " << suggestions[i] << "\n";
+        cout << endl;
+        n = suggestions.size();
+        for (int i = 0; i < n; i++) {
+            cout << i << " -> " << suggestions[i] << endl;
         }
-        std::cout << "  [0] Re-type search query\n";
-        std::cout << "Select option (1-" << suggestions.size() << ") or 0: ";
+
+        cout << "-1 -> Search Again\n";
 
         int choice;
-        if (!(std::cin >> choice)) {
-            std::cin.clear();
-            std::string discard;
-            std::getline(std::cin, discard);
-            std::cout << "Invalid input. Please try again.\n";
-            continue;
-        }
-        std::cin.ignore();
+        cout << "Choose: ";
+        cin >> choice;
+        cin.ignore();
 
-        if (choice >= 1 && choice <= static_cast<int>(suggestions.size())) {
-            return suggestions[choice - 1];
-        } else if (choice == 0) {
+        if (choice == -1) {
             continue;
-        } else {
-            std::cout << "Invalid selection. Please try again.\n";
         }
+
+        if (choice >= 0 && choice < n) {
+            return suggestions[choice];
+        }
+
+        cout << "Invalid Choice\n\n";
     }
 }
 
 int main() {
-    MetroGraph graph;
-    std::cout << "Initializing Delhi Metro Routing Engine...\n";
+    MetroGraph g;
 
-    if (!graph.loadNetwork()) {
-        std::cerr << "Failed to construct full metro network.\n";
-        return 1;
-    }
+    g.loadCSV("blue_main.csv");
+    g.loadCSV("Blue_Vaishali.csv");
+    g.loadCSV("Yellow.csv");
+    g.loadCSV("red.csv");
+    g.loadCSV("green.csv");
+    g.loadCSV("green_branch.csv");
+    g.loadCSV("violet.csv");
+    g.loadCSV("pink.csv");
+    g.loadCSV("magenta.csv");
+    g.loadCSV("rapid.csv");
+    g.loadCSV("airport.csv");
+    g.loadCSV("aqua.csv");
+    g.loadCSV("grey.csv");
 
-    std::cout << "✓ Loaded " << graph.getStationCount() << " stations across "
-              << graph.getLineCount() << " transit lines.\n";
+    g.loadInterchanges("linechange.csv");
 
-    // Build Trie index for O(L) prefix-based station search
     Trie trie;
-    for (const auto& station : graph.getAllStations()) {
+
+    vector<string> stations = g.getAllStations();
+
+    for (string station : stations) {
         trie.insert(station);
     }
-    std::cout << "✓ Indexed " << trie.size() << " stations in Trie autocomplete engine.\n\n";
 
-    while (true) {
-        std::cout << "*******************************************************\n";
-        std::cout << "         DELHI METRO ROUTE PLANNER (CLI)               \n";
-        std::cout << "*******************************************************\n";
-        std::cout << "1. Plan Route Between Two Stations\n";
-        std::cout << "2. Search Station with Trie Autocomplete\n";
-        std::cout << "3. List All Transit Lines\n";
-        std::cout << "4. Exit\n";
-        std::cout << "Enter your choice (1-4): ";
+    cout << "Select Source Station\n";
+    string source = chooseStation(trie);
 
-        int choice;
-        if (!(std::cin >> choice)) {
-            break;
-        }
-        std::cin.ignore();
+    cout << "\nSelect Destination Station\n";
+    string destination = chooseStation(trie);
 
-        if (choice == 1) {
-            std::string source = promptStationSelection(trie, "\nEnter Source Station");
-            std::string dest = promptStationSelection(trie, "Enter Destination Station");
+    cout << "\nChoose Route Type:\n";
+    cout << "1. Fastest Route (Default)\n";
+    cout << "2. Fewest Interchanges\n";
+    cout << "3. Smallest Distance\n";
+    cout << "Choose (1-3): ";
+    int routeType = 1;
+    cin >> routeType;
+    cin.ignore();
 
-            std::cout << "\nChoose Route Optimization:\n";
-            std::cout << "  1. Fastest Route (Default)\n";
-            std::cout << "  2. Shortest Distance\n";
-            std::cout << "  3. Fewest Interchanges\n";
-            std::cout << "Selection (1-3): ";
-            int modeChoice = 1;
-            std::cin >> modeChoice;
-            std::cin.ignore();
+    cout << "\nSource      : " << source << endl;
+    cout << "Destination : " << destination << endl;
+    cout << endl;
 
-            int optMode = (modeChoice == 2) ? 1 : (modeChoice == 3 ? 2 : 0);
-            RouteResult res = graph.findRoute(source, dest, optMode);
-            graph.printRoute(res);
-        } else if (choice == 2) {
-            std::cout << "\nEnter station prefix to test Trie autocomplete: ";
-            std::string query;
-            std::getline(std::cin, query);
-            auto matches = trie.getSuggestions(query, 15);
-            std::cout << "Found " << matches.size() << " suggestions for \"" << query << "\":\n";
-            for (const auto& st : matches) {
-                std::cout << "  • " << st << "\n";
-            }
-            std::cout << "\n";
-        } else if (choice == 3) {
-            std::cout << "\nActive Transit Lines (" << graph.getLineCount() << " lines):\n";
-            for (const auto& line : graph.getAllLines()) {
-                std::cout << "  - " << line << "\n";
-            }
-            std::cout << "\n";
-        } else {
-            std::cout << "Exiting Metro Route Planner. Have a safe journey!\n";
-            break;
-        }
-    }
+    g.getPath(source, destination, routeType);
 
     return 0;
 }
