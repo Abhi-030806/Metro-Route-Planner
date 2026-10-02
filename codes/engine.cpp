@@ -176,11 +176,30 @@ public:
             return;
         }
 
+        cout << "Choose path type:\n";
+        cout << "1. Fastest Route\n";
+        cout << "2. Fewest Interchanges\n";
+        cout << "3. Shortest Distance\n";
+        cout << "Enter choice: ";
+        int choice;
+        cin >> choice;
+
+        double a = 0, b = 0, c = 0;
+        if(choice == 1){
+            a = 1; b = 0; c = 10;
+        } else if(choice == 2){
+            a = 0; b = 0; c = 1;
+        } else if(choice == 3){
+            a = 0; b = 1; c = 0.5;
+        } else {
+            a = 0; b = 0; c = 1;
+        }
+
         int bestcost = INT_MAX;
         vector<int> bestPath ;
         for(int u : stationnodes[station1]){
             for(int v : stationnodes[station2]){
-                auto [cost , path] = dijkstra(u , v , 0 , 0, 1);
+                auto [cost , path] = dijkstra(u , v , a , b , c);
                 if(cost!= -1 && cost<bestcost){
                     bestcost = cost;
                     bestPath = path;
@@ -249,7 +268,6 @@ public:
             getline(line , station, ',');
             getline(line , diststr ,',');
 
-            // trim carriage returns if any
             while (!linename.empty() && (linename.back() == '\r' || linename.back() == ' ')) linename.pop_back();
             while (!station.empty() && (station.back() == '\r' || station.back() == ' ')) station.pop_back();
             while (!diststr.empty() && (diststr.back() == '\r' || diststr.back() == ' ')) diststr.pop_back();
